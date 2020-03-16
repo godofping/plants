@@ -1,0 +1,8 @@
+C:\xampp\htdocs\plants\plants.EL\bin\Debug\netstandard2.0\plants.EL.deps.json
+C:\xampp\htdocs\plants\plants.EL\bin\Debug\netstandard2.0\plants.EL.dll
+C:\xampp\htdocs\plants\plants.EL\bin\Debug\netstandard2.0\plants.EL.pdb
+C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.AssemblyInfoInputs.cache
+C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.AssemblyInfo.cs
+C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.dll
+C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.pdb
+C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.csprojAssemblyReference.cache

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemadesigner version="6.5">
+<source>
+<database charset="latin1" collation="latin1_swedish_ci">plants_db</database>
+</source>
+<canvas zoom="100">
+<tables>
+<table name="plantcategories" view="colnames">
+<left>402</left>
+<top>143</top>
+<width>134</width>
+<height>112</height>
+<sql_create_table>CREATE TABLE `plantcategories` (
+  `plantcategoryid` int(6) NOT NULL AUTO_INCREMENT,
+  `plantcategory` varchar(60) DEFAULT NULL,
+  PRIMARY KEY (`plantcategoryid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="plantimages" view="colnames">
+<left>402</left>
+<top>256</top>
+<width>173</width>
+<height>164</height>
+<sql_create_table>CREATE TABLE `plantimages` (
+  `plantimageid` int(6) NOT NULL AUTO_INCREMENT,
+  `plantid` int(6) DEFAULT NULL,
+  `plantimage` longblob,
+  `plantimageshortdescription` text,
+  PRIMARY KEY (`plantimageid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+<table name="plants" view="colnames">
+<left>807</left>
+<top>176</top>
+<width>155</width>
+<height>146</height>
+<sql_create_table>CREATE TABLE `plants` (
+  `plantid` int(6) NOT NULL AUTO_INCREMENT,
+  `plantname` varchar(100) DEFAULT NULL,
+  `plantscientificname` varchar(100) DEFAULT NULL,
+  `plantdescription` text,
+  PRIMARY KEY (`plantid`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1</sql_create_table>
+</table>
+</tables>
+</canvas>
+</schemadesigner>
