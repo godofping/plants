@@ -64,6 +64,7 @@
             this.pbWholePlant = new System.Windows.Forms.PictureBox();
             this.pbLeaves = new System.Windows.Forms.PictureBox();
             this.pbFlower = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlSearch.SuspendLayout();
@@ -83,14 +84,13 @@
             // 
             // pnlMain
             // 
-            this.pnlMain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlMain.Controls.Add(this.pnlSplitter);
             this.pnlMain.Controls.Add(this.pictureBox4);
             this.pnlMain.Controls.Add(this.lblPlantCategory);
             this.pnlMain.Controls.Add(this.pnlSearch);
             this.pnlMain.Controls.Add(this.flpPlants);
+            this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1024, 1100);
@@ -104,7 +104,7 @@
             this.pnlSplitter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(183)))), ((int)(((byte)(203)))));
             this.pnlSplitter.Location = new System.Drawing.Point(12, 187);
             this.pnlSplitter.Name = "pnlSplitter";
-            this.pnlSplitter.Size = new System.Drawing.Size(1000, 3);
+            this.pnlSplitter.Size = new System.Drawing.Size(998, 3);
             this.pnlSplitter.TabIndex = 11;
             // 
             // pictureBox4
@@ -139,7 +139,7 @@
             this.pnlSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlSearch.Location = new System.Drawing.Point(0, 0);
             this.pnlSearch.Name = "pnlSearch";
-            this.pnlSearch.Size = new System.Drawing.Size(1024, 69);
+            this.pnlSearch.Size = new System.Drawing.Size(1022, 69);
             this.pnlSearch.TabIndex = 7;
             // 
             // pbAdd
@@ -147,7 +147,7 @@
             this.pbAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbAdd.Image = global::plants.PL.Properties.Resources._090_add;
-            this.pbAdd.Location = new System.Drawing.Point(958, 8);
+            this.pbAdd.Location = new System.Drawing.Point(956, 8);
             this.pbAdd.Name = "pbAdd";
             this.pbAdd.Size = new System.Drawing.Size(55, 50);
             this.pbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -194,9 +194,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpPlants.AutoScroll = true;
             this.flpPlants.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.flpPlants.Location = new System.Drawing.Point(12, 194);
+            this.flpPlants.Location = new System.Drawing.Point(12, 196);
             this.flpPlants.Name = "flpPlants";
-            this.flpPlants.Size = new System.Drawing.Size(1000, 894);
+            this.flpPlants.Size = new System.Drawing.Size(1000, 899);
             this.flpPlants.TabIndex = 9;
             // 
             // pbAddImageWholePlant
@@ -218,9 +218,10 @@
             this.pbSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pbSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbSave.Image = global::plants.PL.Properties.Resources._062_diskette;
-            this.pbSave.Location = new System.Drawing.Point(852, 1023);
+            this.pbSave.Location = new System.Drawing.Point(861, 1026);
+            this.pbSave.Margin = new System.Windows.Forms.Padding(50);
             this.pbSave.Name = "pbSave";
-            this.pbSave.Size = new System.Drawing.Size(77, 65);
+            this.pbSave.Size = new System.Drawing.Size(71, 65);
             this.pbSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbSave.TabIndex = 11;
             this.pbSave.TabStop = false;
@@ -231,9 +232,10 @@
             this.pbCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pbCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbCancel.Image = global::plants.PL.Properties.Resources._010_cancel;
-            this.pbCancel.Location = new System.Drawing.Point(935, 1023);
+            this.pbCancel.Location = new System.Drawing.Point(939, 1026);
+            this.pbCancel.Margin = new System.Windows.Forms.Padding(50);
             this.pbCancel.Name = "pbCancel";
-            this.pbCancel.Size = new System.Drawing.Size(77, 65);
+            this.pbCancel.Size = new System.Drawing.Size(71, 65);
             this.pbCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbCancel.TabIndex = 10;
             this.pbCancel.TabStop = false;
@@ -242,10 +244,10 @@
             // 
             // pnlForm
             // 
-            this.pnlForm.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlForm.AutoScroll = true;
+            this.pnlForm.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.pnlForm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlForm.Controls.Add(this.panel1);
             this.pnlForm.Controls.Add(this.pbFlower);
             this.pnlForm.Controls.Add(this.pbLeaves);
             this.pnlForm.Controls.Add(this.pbWholePlant);
@@ -268,9 +270,10 @@
             this.pnlForm.Controls.Add(this.txtCommonName);
             this.pnlForm.Controls.Add(this.pbSave);
             this.pnlForm.Controls.Add(this.pbCancel);
+            this.pnlForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlForm.Location = new System.Drawing.Point(0, 0);
             this.pnlForm.Name = "pnlForm";
-            this.pnlForm.Size = new System.Drawing.Size(1024, 1155);
+            this.pnlForm.Size = new System.Drawing.Size(1024, 1100);
             this.pnlForm.TabIndex = 10;
             this.pnlForm.Visible = false;
             this.pnlForm.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlForm_Paint);
@@ -292,7 +295,7 @@
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1024, 58);
+            this.pnlHeader.Size = new System.Drawing.Size(1022, 58);
             this.pnlHeader.TabIndex = 19;
             // 
             // lblAddPlant
@@ -324,7 +327,7 @@
             this.txtPlantMorphology.Location = new System.Drawing.Point(22, 341);
             this.txtPlantMorphology.Multiline = true;
             this.txtPlantMorphology.Name = "txtPlantMorphology";
-            this.txtPlantMorphology.Size = new System.Drawing.Size(991, 154);
+            this.txtPlantMorphology.Size = new System.Drawing.Size(989, 154);
             this.txtPlantMorphology.TabIndex = 17;
             // 
             // lblScientificName
@@ -344,7 +347,7 @@
             this.txtScientificName.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtScientificName.Location = new System.Drawing.Point(22, 180);
             this.txtScientificName.Name = "txtScientificName";
-            this.txtScientificName.Size = new System.Drawing.Size(991, 33);
+            this.txtScientificName.Size = new System.Drawing.Size(989, 33);
             this.txtScientificName.TabIndex = 15;
             // 
             // lblCommonName
@@ -364,7 +367,7 @@
             this.txtCommonName.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCommonName.Location = new System.Drawing.Point(21, 103);
             this.txtCommonName.Name = "txtCommonName";
-            this.txtCommonName.Size = new System.Drawing.Size(991, 33);
+            this.txtCommonName.Size = new System.Drawing.Size(989, 33);
             this.txtCommonName.TabIndex = 12;
             // 
             // lblFamily
@@ -384,7 +387,7 @@
             this.txtFamily.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFamily.Location = new System.Drawing.Point(22, 260);
             this.txtFamily.Name = "txtFamily";
-            this.txtFamily.Size = new System.Drawing.Size(991, 33);
+            this.txtFamily.Size = new System.Drawing.Size(989, 33);
             this.txtFamily.TabIndex = 25;
             // 
             // lblEconomicImportance
@@ -405,7 +408,7 @@
             this.txtEconomicImportance.Location = new System.Drawing.Point(22, 548);
             this.txtEconomicImportance.Multiline = true;
             this.txtEconomicImportance.Name = "txtEconomicImportance";
-            this.txtEconomicImportance.Size = new System.Drawing.Size(991, 154);
+            this.txtEconomicImportance.Size = new System.Drawing.Size(989, 154);
             this.txtEconomicImportance.TabIndex = 26;
             // 
             // pbAddImageFlower
@@ -460,6 +463,7 @@
             this.pbWholePlant.Location = new System.Drawing.Point(22, 777);
             this.pbWholePlant.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
             this.pbWholePlant.Name = "pbWholePlant";
+            this.pbWholePlant.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
             this.pbWholePlant.Size = new System.Drawing.Size(263, 206);
             this.pbWholePlant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbWholePlant.TabIndex = 32;
@@ -471,6 +475,7 @@
             this.pbLeaves.Location = new System.Drawing.Point(697, 777);
             this.pbLeaves.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
             this.pbLeaves.Name = "pbLeaves";
+            this.pbLeaves.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
             this.pbLeaves.Size = new System.Drawing.Size(263, 206);
             this.pbLeaves.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbLeaves.TabIndex = 33;
@@ -482,16 +487,23 @@
             this.pbFlower.Location = new System.Drawing.Point(361, 777);
             this.pbFlower.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
             this.pbFlower.Name = "pbFlower";
+            this.pbFlower.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
             this.pbFlower.Size = new System.Drawing.Size(263, 206);
             this.pbFlower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbFlower.TabIndex = 34;
             this.pbFlower.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(157, 997);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 35);
+            this.panel1.TabIndex = 35;
+            // 
             // frmPlant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1024, 1100);
             this.Controls.Add(this.pnlForm);
@@ -567,5 +579,6 @@
         private System.Windows.Forms.PictureBox pbFlower;
         private System.Windows.Forms.PictureBox pbLeaves;
         private System.Windows.Forms.PictureBox pbWholePlant;
+        private System.Windows.Forms.Panel panel1;
     }
 }
