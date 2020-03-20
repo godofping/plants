@@ -1,20 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace plants.PL
 {
     public class methods
     {
+
         public static void ChangePanelDisplay(Form frm, Panel pnl)
         {
+
             pnl.Controls.Clear();
             frm.TopLevel = false;
             pnl.Controls.Add(frm);
