@@ -14,7 +14,7 @@ namespace plants.PL.Registrations
     {
         EL.Registrations.Plantcategories plantcategoryEL = new EL.Registrations.Plantcategories();
         BL.Registrations.Plantcategories plantcategoryBL = new BL.Registrations.Plantcategories();
-        public frmPlant(int _plantcategoryid)
+        public frmPlant(int _plantcategoryid, Image img)
         {
             InitializeComponent();
             plantcategoryEL.Plantcategoryid = _plantcategoryid;
@@ -22,6 +22,7 @@ namespace plants.PL.Registrations
             plantcategoryEL = plantcategoryBL.Select(plantcategoryEL);
 
             lblPlantCategory.Text = plantcategoryEL.Plantcategory;
+            pbPlantCategoryPicture.Image = img;
 
         }
 
@@ -49,13 +50,23 @@ namespace plants.PL.Registrations
 
         private void PopulateItems()
         {
-            PlantControls.plant[] plant = new PlantControls.plant[10];
+            BL.Registrations.Plants plantBL = new BL.Registrations.Plants();
+            var dt = plantBL.List(plantcategoryEL.Plantcategoryid, txtSearch.Text);
+
+            PlantControls.plant[] plant = new PlantControls.plant[dt.Rows.Count];
 
             for (int i = 0; i < plant.Length; i++)
             {
+                var plantEL = new EL.Registrations.Plants();
+
+                plantEL.Plantid = Convert.ToInt32(dt.Rows[i]["plantid"]);
+                plantEL = plantBL.Select(plantEL);
+
                 plant[i] = new PlantControls.plant();
-                plant[i].PlantName = "rex";
-                plant[i].PlantScientificName = "rex louis";
+                plant[i].Plantid = plantEL.Plantid;
+                plant[i].PlantName = plantEL.Plantcommonname;
+                plant[i].PlantScientificName = plantEL.Plantscientificname;
+                plant[i].PlantImage = methods.ConverteByteArrayToImage(plantEL.Plantwholeimage);
 
                 flpPlants.Controls.Add(plant[i]);
 

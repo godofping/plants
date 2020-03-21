@@ -37,5 +37,7 @@ namespace plants.PL.PlantControls
         public string PlantScientificName { get => plantScientificName; set { plantScientificName = value; lblScientificName.Text = value; } }
         public Image PlantImage { get => plantImage; set { plantImage = value; pbImage.Image = value; } }
         public int Plantid { get => plantid; set => plantid = value; }
+
+ 
     }
 }

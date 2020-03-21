@@ -128,6 +128,7 @@
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             this.toolTip1.SetToolTip(this.pictureBox1, "View");
+   
             // 
             // pbImage
             // 
@@ -136,6 +137,7 @@
             this.pbImage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pbImage.Name = "pbImage";
             this.pbImage.Size = new System.Drawing.Size(192, 173);
+            this.pbImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbImage.TabIndex = 0;
             this.pbImage.TabStop = false;
             // 

@@ -63,6 +63,16 @@ namespace plants.PL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _004_onion {
+            get {
+                object obj = ResourceManager.GetObject("004-onion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _006_back {
             get {
                 object obj = ResourceManager.GetObject("006-back", resourceCulture);
@@ -113,9 +123,29 @@ namespace plants.PL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _038_bushes {
+            get {
+                object obj = ResourceManager.GetObject("038-bushes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _038_visualization {
             get {
                 object obj = ResourceManager.GetObject("038-visualization", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _041_fruit {
+            get {
+                object obj = ResourceManager.GetObject("041-fruit", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

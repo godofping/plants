@@ -1,10 +1,12 @@
-﻿using System;
+﻿using plants.PL.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -39,7 +41,19 @@ namespace plants.PL
             this.Close();
         }
 
-    
+        private void btnGrasses_Click(object sender, EventArgs e)
+        {
+            var pleaseWait = new frmLoading();
+            pleaseWait.Show();
+            Application.DoEvents();
+
+            ChangePanelLocation(pnlSideBox, btnGrasses);
+            var frm = new Registrations.frmPlant(4, Resources._036_grass1);
+            methods.ChangePanelDisplay(frm, pnlMain);
+
+            pleaseWait.Dispose();
+        }
+
 
         private void btnHerbs_Click(object sender, EventArgs e)
         {
@@ -48,7 +62,7 @@ namespace plants.PL
             Application.DoEvents();
 
             ChangePanelLocation(pnlSideBox, btnHerbs);
-            var frm = new Registrations.frmPlant(3);
+            var frm = new Registrations.frmPlant(3, Resources._004_onion);
             methods.ChangePanelDisplay(frm, pnlMain);
 
             pleaseWait.Dispose();
@@ -61,7 +75,7 @@ namespace plants.PL
             Application.DoEvents();
 
             ChangePanelLocation(pnlSideBox, btnShrubs);
-            var frm = new Registrations.frmPlant(2);
+            var frm = new Registrations.frmPlant(2, Resources._038_bushes);
             methods.ChangePanelDisplay(frm, pnlMain);
 
             pleaseWait.Dispose();
@@ -74,24 +88,13 @@ namespace plants.PL
             Application.DoEvents();
 
             ChangePanelLocation(pnlSideBox, btnTrees);
-            var frm = new Registrations.frmPlant(1);
+            var frm = new Registrations.frmPlant(1, Resources._041_fruit);
             methods.ChangePanelDisplay(frm, pnlMain);
 
             pleaseWait.Dispose();
         }
 
-        private void btnGrasses_Click(object sender, EventArgs e)
-        {
-            var pleaseWait = new frmLoading();
-            pleaseWait.Show();
-            Application.DoEvents();
-
-            ChangePanelLocation(pnlSideBox, btnGrasses);
-            var frm = new Registrations.frmPlant(4);
-            methods.ChangePanelDisplay(frm, pnlMain);
-
-            pleaseWait.Dispose();
-        }
+       
 
         private void mainForm_Load(object sender, EventArgs e)
         {
@@ -100,7 +103,7 @@ namespace plants.PL
             Application.DoEvents();
 
             ChangePanelLocation(pnlSideBox, btnGrasses);
-            var frm = new Registrations.frmPlant(1);
+            var frm = new Registrations.frmPlant(1, Resources._036_grass1);
             methods.ChangePanelDisplay(frm, pnlMain);
 
             pleaseWait.Dispose();
