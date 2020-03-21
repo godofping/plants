@@ -201,9 +201,9 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(45, 994);
+            this.panel1.Location = new System.Drawing.Point(22, 985);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 89);
+            this.panel1.Size = new System.Drawing.Size(200, 23);
             this.panel1.TabIndex = 35;
             // 
             // lblLeavesImage
@@ -275,9 +275,9 @@
             this.lblWholePlantImage.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWholePlantImage.Location = new System.Drawing.Point(18, 735);
             this.lblWholePlantImage.Name = "lblWholePlantImage";
-            this.lblWholePlantImage.Size = new System.Drawing.Size(206, 24);
+            this.lblWholePlantImage.Size = new System.Drawing.Size(221, 24);
             this.lblWholePlantImage.TabIndex = 21;
-            this.lblWholePlantImage.Text = "Whole Plant Image";
+            this.lblWholePlantImage.Text = "Whole Plant Image *";
             // 
             // pnlHeader
             // 
@@ -467,7 +467,7 @@
             this.pbAddImageWholePlant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pbAddImageWholePlant.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbAddImageWholePlant.Image = global::plants.PL.Properties.Resources._099_photo_camera;
-            this.pbAddImageWholePlant.Location = new System.Drawing.Point(235, 720);
+            this.pbAddImageWholePlant.Location = new System.Drawing.Point(245, 720);
             this.pbAddImageWholePlant.Name = "pbAddImageWholePlant";
             this.pbAddImageWholePlant.Size = new System.Drawing.Size(50, 51);
             this.pbAddImageWholePlant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -481,7 +481,7 @@
             this.pbSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pbSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbSave.Image = global::plants.PL.Properties.Resources._062_diskette;
-            this.pbSave.Location = new System.Drawing.Point(857, 1018);
+            this.pbSave.Location = new System.Drawing.Point(857, 1011);
             this.pbSave.Margin = new System.Windows.Forms.Padding(50);
             this.pbSave.Name = "pbSave";
             this.pbSave.Size = new System.Drawing.Size(71, 65);
@@ -496,7 +496,7 @@
             this.pbCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pbCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbCancel.Image = global::plants.PL.Properties.Resources._010_cancel;
-            this.pbCancel.Location = new System.Drawing.Point(941, 1018);
+            this.pbCancel.Location = new System.Drawing.Point(941, 1011);
             this.pbCancel.Margin = new System.Windows.Forms.Padding(50);
             this.pbCancel.Name = "pbCancel";
             this.pbCancel.Size = new System.Drawing.Size(71, 65);

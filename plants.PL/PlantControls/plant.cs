@@ -27,7 +27,7 @@ namespace plants.PL.PlantControls
             }
         }
 
-        
+
         private string plantName;
         private string plantScientificName;
         private Image plantImage;

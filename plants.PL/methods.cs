@@ -56,6 +56,7 @@ namespace plants.PL
             return bol;
         }
 
+
         public static void ClearTXT(params TextBox[] i)
         {
             foreach (TextBox d in i)

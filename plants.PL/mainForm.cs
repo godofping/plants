@@ -103,7 +103,7 @@ namespace plants.PL
             Application.DoEvents();
 
             ChangePanelLocation(pnlSideBox, btnGrasses);
-            var frm = new Registrations.frmPlant(1, Resources._036_grass1);
+            var frm = new Registrations.frmPlant(4, Resources._036_grass1);
             methods.ChangePanelDisplay(frm, pnlMain);
 
             pleaseWait.Dispose();

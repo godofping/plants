@@ -50,6 +50,7 @@ namespace plants.PL.Registrations
 
         private void PopulateItems()
         {
+            flpPlants.Controls.Clear();
             BL.Registrations.Plants plantBL = new BL.Registrations.Plants();
             var dt = plantBL.List(plantcategoryEL.Plantcategoryid, txtSearch.Text);
 
@@ -139,7 +140,7 @@ namespace plants.PL.Registrations
 
         private void pbSave_Click(object sender, EventArgs e)
         {
-            if (methods.CheckRequiredTXT(txtCommonName, txtScientificName))
+            if (methods.CheckRequiredTXT(txtCommonName, txtScientificName) & pbWholePlant.Image != null)
             {
                 var plantEL = new EL.Registrations.Plants();
                 var plantBL = new BL.Registrations.Plants();
@@ -159,6 +160,7 @@ namespace plants.PL.Registrations
                     MessageBox.Show("Succesfully saved!");
                     ShowForm(false);
                     ClearForm();
+                    PopulateItems();
                 }
                 else
                 {
