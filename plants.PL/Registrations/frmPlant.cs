@@ -12,9 +12,17 @@ namespace plants.PL.Registrations
 {
     public partial class frmPlant : Form
     {
-        public frmPlant()
+        EL.Registrations.Plantcategories plantcategoryEL = new EL.Registrations.Plantcategories();
+        BL.Registrations.Plantcategories plantcategoryBL = new BL.Registrations.Plantcategories();
+        public frmPlant(int _plantcategoryid)
         {
             InitializeComponent();
+            plantcategoryEL.Plantcategoryid = _plantcategoryid;
+
+            plantcategoryEL = plantcategoryBL.Select(plantcategoryEL);
+
+            lblPlantCategory.Text = plantcategoryEL.Plantcategory;
+
         }
 
         protected override CreateParams CreateParams
@@ -25,6 +33,18 @@ namespace plants.PL.Registrations
                 handleParam.ExStyle |= 0x02000000;   // WS_EX_COMPOSITED       
                 return handleParam;
             }
+        }
+
+        private void ClearForm()
+        {
+            txtCommonName.ResetText();
+            txtScientificName.ResetText();
+            txtFamily.ResetText();
+            txtPlantMorphology.ResetText();
+            txtEconomicImportance.ResetText();
+            pbWholePlant.Image = null;
+            pbFlower.Image = null;
+            pbLeaves.Image = null;
         }
 
         private void PopulateItems()
@@ -48,14 +68,6 @@ namespace plants.PL.Registrations
             pnlMain.Visible = !bol;
         }
 
-        //public void AddImage(EL.Registrations.Plantimages plantimageEL)
-        //{
-        //    PlantControls.plantImage f = new PlantControls.plantImage();
-        //    f.Plantpicture = methods.ConverteByteArrayToImage(plantimageEL.Plantimage);
-        //    f.Description = plantimageEL.Plantimageshortdescription;
-
-        //    flpPlantImage.Controls.Add(f);
-        //}
 
         private void pbClose_Click(object sender, EventArgs e)
         {
@@ -67,13 +79,10 @@ namespace plants.PL.Registrations
             PopulateItems();
         }
 
-        private void pnlForm_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void pbAdd_Click(object sender, EventArgs e)
         {
+            ClearForm();
             ShowForm(true);
         }
 
@@ -89,9 +98,67 @@ namespace plants.PL.Registrations
 
         private void pbAddImage_Click(object sender, EventArgs e)
         {
-       
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                pbWholePlant.Image = new Bitmap(open.FileName);
+            }
         }
 
-     
+        private void pbAddImageFlower_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                pbFlower.Image = new Bitmap(open.FileName);
+            }
+        }
+
+        private void pbAddLeavesImage_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                pbLeaves.Image = new Bitmap(open.FileName);
+            }
+        }
+
+        private void pbSave_Click(object sender, EventArgs e)
+        {
+            if (methods.CheckRequiredTXT(txtCommonName, txtScientificName))
+            {
+                var plantEL = new EL.Registrations.Plants();
+                var plantBL = new BL.Registrations.Plants();
+
+                plantEL.Plantcategoryid = plantcategoryEL.Plantcategoryid;
+                plantEL.Plantcommonname = txtCommonName.Text;
+                plantEL.Plantscientificname = txtScientificName.Text;
+                plantEL.Plantfamily = txtFamily.Text;
+                plantEL.Plantmorphology = txtPlantMorphology.Text;
+                plantEL.Planteconomicimportance = txtEconomicImportance.Text;
+                plantEL.Plantwholeimage = methods.ConvertImageToByteArray(pbWholePlant.Image);
+                plantEL.Plantflowerimage = methods.ConvertImageToByteArray(pbFlower.Image);
+                plantEL.Plantleavesimage = methods.ConvertImageToByteArray(pbLeaves.Image);
+
+                if (plantBL.Insert(plantEL) > 0)
+                {
+                    MessageBox.Show("Succesfully saved!");
+                    ShowForm(false);
+                    ClearForm();
+                }
+                else
+                {
+                    MessageBox.Show("Failed!");
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Please fill out all fields marked by *");
+            }
+        }
     }
 }

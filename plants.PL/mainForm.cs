@@ -48,7 +48,7 @@ namespace plants.PL
             Application.DoEvents();
 
             ChangePanelLocation(pnlSideBox, btnHerbs);
-            var frm = new Registrations.frmPlant();
+            var frm = new Registrations.frmPlant(3);
             methods.ChangePanelDisplay(frm, pnlMain);
 
             pleaseWait.Dispose();
@@ -61,7 +61,7 @@ namespace plants.PL
             Application.DoEvents();
 
             ChangePanelLocation(pnlSideBox, btnShrubs);
-            var frm = new Registrations.frmPlant();
+            var frm = new Registrations.frmPlant(2);
             methods.ChangePanelDisplay(frm, pnlMain);
 
             pleaseWait.Dispose();
@@ -74,7 +74,7 @@ namespace plants.PL
             Application.DoEvents();
 
             ChangePanelLocation(pnlSideBox, btnTrees);
-            var frm = new Registrations.frmPlant();
+            var frm = new Registrations.frmPlant(1);
             methods.ChangePanelDisplay(frm, pnlMain);
 
             pleaseWait.Dispose();
@@ -87,7 +87,7 @@ namespace plants.PL
             Application.DoEvents();
 
             ChangePanelLocation(pnlSideBox, btnGrasses);
-            var frm = new Registrations.frmPlant();
+            var frm = new Registrations.frmPlant(4);
             methods.ChangePanelDisplay(frm, pnlMain);
 
             pleaseWait.Dispose();
@@ -100,7 +100,7 @@ namespace plants.PL
             Application.DoEvents();
 
             ChangePanelLocation(pnlSideBox, btnGrasses);
-            var frm = new Registrations.frmPlant();
+            var frm = new Registrations.frmPlant(1);
             methods.ChangePanelDisplay(frm, pnlMain);
 
             pleaseWait.Dispose();

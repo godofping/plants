@@ -15,3 +15,6 @@ C:\xampp\htdocs\plants\plants.PL\obj\Debug\plants.PL.csproj.CopyComplete
 C:\xampp\htdocs\plants\plants.PL\obj\Debug\plants.PL.PlantControls.plant.resources
 C:\xampp\htdocs\plants\plants.PL\obj\Debug\plants.PL.frmLoading.resources
 C:\xampp\htdocs\plants\plants.PL\obj\Debug\plants.PL.Registrations.frmPlant.resources
+C:\xampp\htdocs\plants\plants.PL\bin\Debug\plants.DL.dll
+C:\xampp\htdocs\plants\plants.PL\bin\Debug\MySql.Data.dll
+C:\xampp\htdocs\plants\plants.PL\bin\Debug\plants.DL.pdb
