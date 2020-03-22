@@ -12,7 +12,7 @@ namespace plants.DL.Registrations
         {
             using (var cmd = new MySqlCommand())
             {
-                cmd.CommandText = "select * from plants where plantcategoryid = @id and (plantcommonname like @str or plantscientificname like @str)";
+                cmd.CommandText = "select plantid, plantcommonname, plantscientificname from plants where plantcategoryid = @id and (plantcommonname like @str or plantscientificname like @str)";
                 cmd.Parameters.AddWithValue("@id", id);
                 cmd.Parameters.AddWithValue("@str", "%" + str + "%");
                 return methods.executeQuery(cmd);

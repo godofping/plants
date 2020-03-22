@@ -31,14 +31,24 @@
             this.components = new System.ComponentModel.Container();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.pnlSplitter = new System.Windows.Forms.Panel();
+            this.pbPlantCategoryPicture = new System.Windows.Forms.PictureBox();
             this.lblPlantCategory = new System.Windows.Forms.Label();
             this.pnlSearch = new System.Windows.Forms.Panel();
+            this.pbAdd = new System.Windows.Forms.PictureBox();
+            this.pbMagnifying = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
-            this.flpPlants = new System.Windows.Forms.FlowLayoutPanel();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pbAddLeavesImage = new System.Windows.Forms.PictureBox();
+            this.pbAddImageFlower = new System.Windows.Forms.PictureBox();
+            this.pbAddImageWholePlant = new System.Windows.Forms.PictureBox();
+            this.pbSave = new System.Windows.Forms.PictureBox();
+            this.pbCancel = new System.Windows.Forms.PictureBox();
             this.pnlForm = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pbFlower = new System.Windows.Forms.PictureBox();
+            this.pbLeaves = new System.Windows.Forms.PictureBox();
+            this.pbWholePlant = new System.Windows.Forms.PictureBox();
             this.lblLeavesImage = new System.Windows.Forms.Label();
             this.lblFlowerImage = new System.Windows.Forms.Label();
             this.lblEconomicImportance = new System.Windows.Forms.Label();
@@ -47,53 +57,44 @@
             this.lblFamily = new System.Windows.Forms.Label();
             this.lblWholePlantImage = new System.Windows.Forms.Label();
             this.pnlHeader = new System.Windows.Forms.Panel();
-            this.lblAddPlant = new System.Windows.Forms.Label();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.lblPlantMorphology = new System.Windows.Forms.Label();
             this.txtPlantMorphology = new System.Windows.Forms.TextBox();
             this.lblScientificName = new System.Windows.Forms.Label();
             this.txtScientificName = new System.Windows.Forms.TextBox();
             this.lblCommonName = new System.Windows.Forms.Label();
             this.txtCommonName = new System.Windows.Forms.TextBox();
-            this.pbPlantCategoryPicture = new System.Windows.Forms.PictureBox();
-            this.pbAdd = new System.Windows.Forms.PictureBox();
-            this.pbMagnifying = new System.Windows.Forms.PictureBox();
-            this.pbFlower = new System.Windows.Forms.PictureBox();
-            this.pbLeaves = new System.Windows.Forms.PictureBox();
-            this.pbWholePlant = new System.Windows.Forms.PictureBox();
-            this.pbAddLeavesImage = new System.Windows.Forms.PictureBox();
-            this.pbAddImageFlower = new System.Windows.Forms.PictureBox();
-            this.pbAddImageWholePlant = new System.Windows.Forms.PictureBox();
-            this.pbSave = new System.Windows.Forms.PictureBox();
-            this.pbCancel = new System.Windows.Forms.PictureBox();
+            this.dgv = new System.Windows.Forms.DataGridView();
             this.pnlMain.SuspendLayout();
-            this.pnlSearch.SuspendLayout();
-            this.pnlForm.SuspendLayout();
-            this.pnlHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlantCategoryPicture)).BeginInit();
+            this.pnlSearch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMagnifying)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFlower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLeaves)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWholePlant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddLeavesImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddImageFlower)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddImageWholePlant)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCancel)).BeginInit();
+            this.pnlForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeaves)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWholePlant)).BeginInit();
+            this.pnlHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlMain
             // 
             this.pnlMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMain.Controls.Add(this.dgv);
             this.pnlMain.Controls.Add(this.pnlSplitter);
             this.pnlMain.Controls.Add(this.pbPlantCategoryPicture);
             this.pnlMain.Controls.Add(this.lblPlantCategory);
             this.pnlMain.Controls.Add(this.pnlSearch);
-            this.pnlMain.Controls.Add(this.flpPlants);
             this.pnlMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMain.Location = new System.Drawing.Point(0, 0);
             this.pnlMain.Name = "pnlMain";
-            this.pnlMain.Size = new System.Drawing.Size(1024, 1100);
+            this.pnlMain.Size = new System.Drawing.Size(1024, 1061);
             this.pnlMain.TabIndex = 7;
             // 
             // pnlSplitter
@@ -106,6 +107,16 @@
             this.pnlSplitter.Name = "pnlSplitter";
             this.pnlSplitter.Size = new System.Drawing.Size(998, 3);
             this.pnlSplitter.TabIndex = 11;
+            // 
+            // pbPlantCategoryPicture
+            // 
+            this.pbPlantCategoryPicture.Image = global::plants.PL.Properties.Resources._041_fruit;
+            this.pbPlantCategoryPicture.Location = new System.Drawing.Point(12, 74);
+            this.pbPlantCategoryPicture.Name = "pbPlantCategoryPicture";
+            this.pbPlantCategoryPicture.Size = new System.Drawing.Size(133, 110);
+            this.pbPlantCategoryPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPlantCategoryPicture.TabIndex = 10;
+            this.pbPlantCategoryPicture.TabStop = false;
             // 
             // lblPlantCategory
             // 
@@ -132,6 +143,31 @@
             this.pnlSearch.Size = new System.Drawing.Size(1022, 69);
             this.pnlSearch.TabIndex = 7;
             // 
+            // pbAdd
+            // 
+            this.pbAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbAdd.Image = global::plants.PL.Properties.Resources._090_add;
+            this.pbAdd.Location = new System.Drawing.Point(956, 8);
+            this.pbAdd.Name = "pbAdd";
+            this.pbAdd.Size = new System.Drawing.Size(55, 50);
+            this.pbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAdd.TabIndex = 9;
+            this.pbAdd.TabStop = false;
+            this.toolTip1.SetToolTip(this.pbAdd, "Add Plant");
+            this.pbAdd.Click += new System.EventHandler(this.pbAdd_Click);
+            // 
+            // pbMagnifying
+            // 
+            this.pbMagnifying.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pbMagnifying.Image = global::plants.PL.Properties.Resources._096_search;
+            this.pbMagnifying.Location = new System.Drawing.Point(857, 20);
+            this.pbMagnifying.Name = "pbMagnifying";
+            this.pbMagnifying.Size = new System.Drawing.Size(30, 35);
+            this.pbMagnifying.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbMagnifying.TabIndex = 7;
+            this.pbMagnifying.TabStop = false;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -151,18 +187,79 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(728, 41);
             this.txtSearch.TabIndex = 3;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // flpPlants
+            // pbAddLeavesImage
             // 
-            this.flpPlants.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flpPlants.AutoScroll = true;
-            this.flpPlants.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.flpPlants.Location = new System.Drawing.Point(12, 196);
-            this.flpPlants.Name = "flpPlants";
-            this.flpPlants.Size = new System.Drawing.Size(1000, 899);
-            this.flpPlants.TabIndex = 9;
+            this.pbAddLeavesImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbAddLeavesImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbAddLeavesImage.Image = global::plants.PL.Properties.Resources._099_photo_camera;
+            this.pbAddLeavesImage.Location = new System.Drawing.Point(861, 720);
+            this.pbAddLeavesImage.Name = "pbAddLeavesImage";
+            this.pbAddLeavesImage.Size = new System.Drawing.Size(50, 51);
+            this.pbAddLeavesImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAddLeavesImage.TabIndex = 31;
+            this.pbAddLeavesImage.TabStop = false;
+            this.toolTip1.SetToolTip(this.pbAddLeavesImage, "Add Image");
+            this.pbAddLeavesImage.Click += new System.EventHandler(this.pbAddLeavesImage_Click);
+            // 
+            // pbAddImageFlower
+            // 
+            this.pbAddImageFlower.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbAddImageFlower.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbAddImageFlower.Image = global::plants.PL.Properties.Resources._099_photo_camera;
+            this.pbAddImageFlower.Location = new System.Drawing.Point(519, 720);
+            this.pbAddImageFlower.Name = "pbAddImageFlower";
+            this.pbAddImageFlower.Size = new System.Drawing.Size(50, 51);
+            this.pbAddImageFlower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAddImageFlower.TabIndex = 29;
+            this.pbAddImageFlower.TabStop = false;
+            this.toolTip1.SetToolTip(this.pbAddImageFlower, "Add Image");
+            this.pbAddImageFlower.Click += new System.EventHandler(this.pbAddImageFlower_Click);
+            // 
+            // pbAddImageWholePlant
+            // 
+            this.pbAddImageWholePlant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbAddImageWholePlant.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbAddImageWholePlant.Image = global::plants.PL.Properties.Resources._099_photo_camera;
+            this.pbAddImageWholePlant.Location = new System.Drawing.Point(245, 720);
+            this.pbAddImageWholePlant.Name = "pbAddImageWholePlant";
+            this.pbAddImageWholePlant.Size = new System.Drawing.Size(50, 51);
+            this.pbAddImageWholePlant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAddImageWholePlant.TabIndex = 22;
+            this.pbAddImageWholePlant.TabStop = false;
+            this.toolTip1.SetToolTip(this.pbAddImageWholePlant, "Add Image");
+            this.pbAddImageWholePlant.Click += new System.EventHandler(this.pbAddImage_Click);
+            // 
+            // pbSave
+            // 
+            this.pbSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbSave.Image = global::plants.PL.Properties.Resources._062_diskette;
+            this.pbSave.Location = new System.Drawing.Point(857, 972);
+            this.pbSave.Margin = new System.Windows.Forms.Padding(50);
+            this.pbSave.Name = "pbSave";
+            this.pbSave.Size = new System.Drawing.Size(71, 65);
+            this.pbSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSave.TabIndex = 11;
+            this.pbSave.TabStop = false;
+            this.toolTip1.SetToolTip(this.pbSave, "Save");
+            this.pbSave.Click += new System.EventHandler(this.pbSave_Click);
+            // 
+            // pbCancel
+            // 
+            this.pbCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbCancel.Image = global::plants.PL.Properties.Resources._010_cancel;
+            this.pbCancel.Location = new System.Drawing.Point(941, 972);
+            this.pbCancel.Margin = new System.Windows.Forms.Padding(50);
+            this.pbCancel.Name = "pbCancel";
+            this.pbCancel.Size = new System.Drawing.Size(71, 65);
+            this.pbCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbCancel.TabIndex = 10;
+            this.pbCancel.TabStop = false;
+            this.toolTip1.SetToolTip(this.pbCancel, "Cancel");
+            this.pbCancel.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pnlForm
             // 
@@ -195,7 +292,7 @@
             this.pnlForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlForm.Location = new System.Drawing.Point(0, 0);
             this.pnlForm.Name = "pnlForm";
-            this.pnlForm.Size = new System.Drawing.Size(1024, 1100);
+            this.pnlForm.Size = new System.Drawing.Size(1024, 1061);
             this.pnlForm.TabIndex = 10;
             this.pnlForm.Visible = false;
             // 
@@ -205,6 +302,42 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 23);
             this.panel1.TabIndex = 35;
+            // 
+            // pbFlower
+            // 
+            this.pbFlower.BackColor = System.Drawing.Color.Gray;
+            this.pbFlower.Location = new System.Drawing.Point(361, 777);
+            this.pbFlower.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.pbFlower.Name = "pbFlower";
+            this.pbFlower.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.pbFlower.Size = new System.Drawing.Size(263, 206);
+            this.pbFlower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFlower.TabIndex = 34;
+            this.pbFlower.TabStop = false;
+            // 
+            // pbLeaves
+            // 
+            this.pbLeaves.BackColor = System.Drawing.Color.Gray;
+            this.pbLeaves.Location = new System.Drawing.Point(697, 777);
+            this.pbLeaves.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.pbLeaves.Name = "pbLeaves";
+            this.pbLeaves.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.pbLeaves.Size = new System.Drawing.Size(263, 206);
+            this.pbLeaves.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLeaves.TabIndex = 33;
+            this.pbLeaves.TabStop = false;
+            // 
+            // pbWholePlant
+            // 
+            this.pbWholePlant.BackColor = System.Drawing.Color.Gray;
+            this.pbWholePlant.Location = new System.Drawing.Point(22, 777);
+            this.pbWholePlant.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.pbWholePlant.Name = "pbWholePlant";
+            this.pbWholePlant.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.pbWholePlant.Size = new System.Drawing.Size(263, 206);
+            this.pbWholePlant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbWholePlant.TabIndex = 32;
+            this.pbWholePlant.TabStop = false;
             // 
             // lblLeavesImage
             // 
@@ -282,23 +415,23 @@
             // pnlHeader
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(72)))), ((int)(((byte)(89)))));
-            this.pnlHeader.Controls.Add(this.lblAddPlant);
+            this.pnlHeader.Controls.Add(this.lblHeader);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlHeader.Name = "pnlHeader";
             this.pnlHeader.Size = new System.Drawing.Size(1022, 58);
             this.pnlHeader.TabIndex = 19;
             // 
-            // lblAddPlant
+            // lblHeader
             // 
-            this.lblAddPlant.AutoSize = true;
-            this.lblAddPlant.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddPlant.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(236)))), ((int)(((byte)(233)))));
-            this.lblAddPlant.Location = new System.Drawing.Point(14, 9);
-            this.lblAddPlant.Name = "lblAddPlant";
-            this.lblAddPlant.Size = new System.Drawing.Size(170, 39);
-            this.lblAddPlant.TabIndex = 13;
-            this.lblAddPlant.Text = "Add Plant";
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.Font = new System.Drawing.Font("Century Gothic", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(236)))), ((int)(((byte)(233)))));
+            this.lblHeader.Location = new System.Drawing.Point(14, 9);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(170, 39);
+            this.lblHeader.TabIndex = 13;
+            this.lblHeader.Text = "Add Plant";
             // 
             // lblPlantMorphology
             // 
@@ -363,157 +496,26 @@
             this.txtCommonName.Size = new System.Drawing.Size(989, 33);
             this.txtCommonName.TabIndex = 12;
             // 
-            // pbPlantCategoryPicture
+            // dgv
             // 
-            this.pbPlantCategoryPicture.Image = global::plants.PL.Properties.Resources._041_fruit;
-            this.pbPlantCategoryPicture.Location = new System.Drawing.Point(12, 74);
-            this.pbPlantCategoryPicture.Name = "pbPlantCategoryPicture";
-            this.pbPlantCategoryPicture.Size = new System.Drawing.Size(133, 110);
-            this.pbPlantCategoryPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbPlantCategoryPicture.TabIndex = 10;
-            this.pbPlantCategoryPicture.TabStop = false;
-            // 
-            // pbAdd
-            // 
-            this.pbAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbAdd.Image = global::plants.PL.Properties.Resources._090_add;
-            this.pbAdd.Location = new System.Drawing.Point(956, 8);
-            this.pbAdd.Name = "pbAdd";
-            this.pbAdd.Size = new System.Drawing.Size(55, 50);
-            this.pbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAdd.TabIndex = 9;
-            this.pbAdd.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbAdd, "Add Plant");
-            this.pbAdd.Click += new System.EventHandler(this.pbAdd_Click);
-            // 
-            // pbMagnifying
-            // 
-            this.pbMagnifying.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pbMagnifying.Image = global::plants.PL.Properties.Resources._096_search;
-            this.pbMagnifying.Location = new System.Drawing.Point(857, 20);
-            this.pbMagnifying.Name = "pbMagnifying";
-            this.pbMagnifying.Size = new System.Drawing.Size(30, 35);
-            this.pbMagnifying.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbMagnifying.TabIndex = 7;
-            this.pbMagnifying.TabStop = false;
-            // 
-            // pbFlower
-            // 
-            this.pbFlower.BackColor = System.Drawing.Color.Gray;
-            this.pbFlower.Location = new System.Drawing.Point(361, 777);
-            this.pbFlower.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.pbFlower.Name = "pbFlower";
-            this.pbFlower.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pbFlower.Size = new System.Drawing.Size(263, 206);
-            this.pbFlower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFlower.TabIndex = 34;
-            this.pbFlower.TabStop = false;
-            // 
-            // pbLeaves
-            // 
-            this.pbLeaves.BackColor = System.Drawing.Color.Gray;
-            this.pbLeaves.Location = new System.Drawing.Point(697, 777);
-            this.pbLeaves.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.pbLeaves.Name = "pbLeaves";
-            this.pbLeaves.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pbLeaves.Size = new System.Drawing.Size(263, 206);
-            this.pbLeaves.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLeaves.TabIndex = 33;
-            this.pbLeaves.TabStop = false;
-            // 
-            // pbWholePlant
-            // 
-            this.pbWholePlant.BackColor = System.Drawing.Color.Gray;
-            this.pbWholePlant.Location = new System.Drawing.Point(22, 777);
-            this.pbWholePlant.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.pbWholePlant.Name = "pbWholePlant";
-            this.pbWholePlant.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pbWholePlant.Size = new System.Drawing.Size(263, 206);
-            this.pbWholePlant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbWholePlant.TabIndex = 32;
-            this.pbWholePlant.TabStop = false;
-            // 
-            // pbAddLeavesImage
-            // 
-            this.pbAddLeavesImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbAddLeavesImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbAddLeavesImage.Image = global::plants.PL.Properties.Resources._099_photo_camera;
-            this.pbAddLeavesImage.Location = new System.Drawing.Point(861, 720);
-            this.pbAddLeavesImage.Name = "pbAddLeavesImage";
-            this.pbAddLeavesImage.Size = new System.Drawing.Size(50, 51);
-            this.pbAddLeavesImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAddLeavesImage.TabIndex = 31;
-            this.pbAddLeavesImage.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbAddLeavesImage, "Add Image");
-            this.pbAddLeavesImage.Click += new System.EventHandler(this.pbAddLeavesImage_Click);
-            // 
-            // pbAddImageFlower
-            // 
-            this.pbAddImageFlower.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbAddImageFlower.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbAddImageFlower.Image = global::plants.PL.Properties.Resources._099_photo_camera;
-            this.pbAddImageFlower.Location = new System.Drawing.Point(519, 720);
-            this.pbAddImageFlower.Name = "pbAddImageFlower";
-            this.pbAddImageFlower.Size = new System.Drawing.Size(50, 51);
-            this.pbAddImageFlower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAddImageFlower.TabIndex = 29;
-            this.pbAddImageFlower.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbAddImageFlower, "Add Image");
-            this.pbAddImageFlower.Click += new System.EventHandler(this.pbAddImageFlower_Click);
-            // 
-            // pbAddImageWholePlant
-            // 
-            this.pbAddImageWholePlant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbAddImageWholePlant.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbAddImageWholePlant.Image = global::plants.PL.Properties.Resources._099_photo_camera;
-            this.pbAddImageWholePlant.Location = new System.Drawing.Point(245, 720);
-            this.pbAddImageWholePlant.Name = "pbAddImageWholePlant";
-            this.pbAddImageWholePlant.Size = new System.Drawing.Size(50, 51);
-            this.pbAddImageWholePlant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAddImageWholePlant.TabIndex = 22;
-            this.pbAddImageWholePlant.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbAddImageWholePlant, "Add Image");
-            this.pbAddImageWholePlant.Click += new System.EventHandler(this.pbAddImage_Click);
-            // 
-            // pbSave
-            // 
-            this.pbSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbSave.Image = global::plants.PL.Properties.Resources._062_diskette;
-            this.pbSave.Location = new System.Drawing.Point(857, 1011);
-            this.pbSave.Margin = new System.Windows.Forms.Padding(50);
-            this.pbSave.Name = "pbSave";
-            this.pbSave.Size = new System.Drawing.Size(71, 65);
-            this.pbSave.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbSave.TabIndex = 11;
-            this.pbSave.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbSave, "Save");
-            this.pbSave.Click += new System.EventHandler(this.pbSave_Click);
-            // 
-            // pbCancel
-            // 
-            this.pbCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbCancel.Image = global::plants.PL.Properties.Resources._010_cancel;
-            this.pbCancel.Location = new System.Drawing.Point(941, 1011);
-            this.pbCancel.Margin = new System.Windows.Forms.Padding(50);
-            this.pbCancel.Name = "pbCancel";
-            this.pbCancel.Size = new System.Drawing.Size(71, 65);
-            this.pbCancel.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbCancel.TabIndex = 10;
-            this.pbCancel.TabStop = false;
-            this.toolTip1.SetToolTip(this.pbCancel, "Cancel");
-            this.pbCancel.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.dgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Location = new System.Drawing.Point(12, 205);
+            this.dgv.Name = "dgv";
+            this.dgv.Size = new System.Drawing.Size(998, 843);
+            this.dgv.TabIndex = 12;
+            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
             // 
             // frmPlant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1024, 1100);
-            this.Controls.Add(this.pnlMain);
+            this.ClientSize = new System.Drawing.Size(1024, 1061);
             this.Controls.Add(this.pnlForm);
+            this.Controls.Add(this.pnlMain);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
@@ -526,23 +528,24 @@
             this.Load += new System.EventHandler(this.frmPlantsList_Load);
             this.pnlMain.ResumeLayout(false);
             this.pnlMain.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlantCategoryPicture)).EndInit();
             this.pnlSearch.ResumeLayout(false);
             this.pnlSearch.PerformLayout();
-            this.pnlForm.ResumeLayout(false);
-            this.pnlForm.PerformLayout();
-            this.pnlHeader.ResumeLayout(false);
-            this.pnlHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPlantCategoryPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMagnifying)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFlower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLeaves)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWholePlant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddLeavesImage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddImageFlower)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddImageWholePlant)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCancel)).EndInit();
+            this.pnlForm.ResumeLayout(false);
+            this.pnlForm.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeaves)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWholePlant)).EndInit();
+            this.pnlHeader.ResumeLayout(false);
+            this.pnlHeader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -557,12 +560,11 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.FlowLayoutPanel flpPlants;
         private System.Windows.Forms.PictureBox pbAdd;
         private System.Windows.Forms.Panel pnlForm;
         private System.Windows.Forms.PictureBox pbSave;
         private System.Windows.Forms.PictureBox pbCancel;
-        private System.Windows.Forms.Label lblAddPlant;
+        private System.Windows.Forms.Label lblHeader;
         private System.Windows.Forms.TextBox txtCommonName;
         private System.Windows.Forms.Label lblScientificName;
         private System.Windows.Forms.TextBox txtScientificName;
@@ -586,5 +588,6 @@
         private System.Windows.Forms.PictureBox pbLeaves;
         private System.Windows.Forms.PictureBox pbWholePlant;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgv;
     }
 }

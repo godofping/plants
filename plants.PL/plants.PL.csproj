@@ -52,12 +52,6 @@
     <Compile Include="frmLoading.Designer.cs">
       <DependentUpon>frmLoading.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlantControls\plant.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="PlantControls\plant.Designer.cs">
-      <DependentUpon>plant.cs</DependentUpon>
-    </Compile>
     <Compile Include="mainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,9 +69,6 @@
     </Compile>
     <EmbeddedResource Include="frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PlantControls\plant.resx">
-      <DependentUpon>plant.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="mainForm.resx">
       <DependentUpon>mainForm.cs</DependentUpon>
