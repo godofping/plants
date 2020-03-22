@@ -105,16 +105,18 @@ namespace plants.PL
 
         public static byte[] ConvertImageToByteArray(Image x)
         {
+            Bitmap bitmapp = new Bitmap(x);
             ImageConverter _imageConverter = new ImageConverter();
-            byte[] xByte = (byte[])_imageConverter.ConvertTo(x, typeof(byte[]));
+            byte[] xByte = (byte[])_imageConverter.ConvertTo(bitmapp, typeof(byte[]));
             return xByte;
         }
 
-        public static Image ConverteByteArrayToImage(byte[] byteArrayIn)
+        public static Bitmap ConverteByteArrayToImage(byte[] byteArrayIn)
         {
             using (MemoryStream mStream = new MemoryStream(byteArrayIn))
             {
-                return Image.FromStream(mStream);
+                Bitmap bitmapp = new Bitmap(Image.FromStream(mStream));
+                return bitmapp;
             }
         }
 

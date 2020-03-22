@@ -1,4 +1,5 @@
-﻿using System;
+﻿using plants.PL.Properties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -101,9 +102,9 @@ namespace plants.PL.Registrations
             txtFamily.ResetText();
             txtPlantMorphology.ResetText();
             txtEconomicImportance.ResetText();
-            pbWholePlant.Image = null;
-            pbFlower.Image = null;
-            pbLeaves.Image = null;
+            pbWholePlant.Image = Resources.image_icon_png_8;
+            pbFlower.Image = Resources.image_icon_png_8;
+            pbLeaves.Image = Resources.image_icon_png_8;
         }
 
         private void ShowForm(Boolean bol)
@@ -185,7 +186,7 @@ namespace plants.PL.Registrations
 
         private void pbSave_Click(object sender, EventArgs e)
         {
-            if (methods.CheckRequiredTXT(txtCommonName, txtScientificName) & pbWholePlant.Image != null)
+            if (methods.CheckRequiredTXT(txtCommonName, txtScientificName))
             {
 
                 plantEL.Plantcategoryid = plantcategoryEL.Plantcategoryid;
@@ -194,9 +195,38 @@ namespace plants.PL.Registrations
                 plantEL.Plantfamily = txtFamily.Text;
                 plantEL.Plantmorphology = txtPlantMorphology.Text;
                 plantEL.Planteconomicimportance = txtEconomicImportance.Text;
-                plantEL.Plantwholeimage = methods.ConvertImageToByteArray(pbWholePlant.Image);
-                plantEL.Plantflowerimage = methods.ConvertImageToByteArray(pbFlower.Image);
-                plantEL.Plantleavesimage = methods.ConvertImageToByteArray(pbLeaves.Image);
+
+
+                if (pbWholePlant.Image != null)
+                {
+                    plantEL.Plantwholeimage = methods.ConvertImageToByteArray(pbWholePlant.Image);
+                }
+                else
+                {
+                    plantEL.Plantwholeimage = null;
+                }
+
+                if (pbWholePlant.Image != null)
+                {
+                    plantEL.Plantflowerimage = methods.ConvertImageToByteArray(pbFlower.Image);
+                }
+                else
+                {
+                    plantEL.Plantflowerimage = null;
+                }
+
+                if (pbWholePlant.Image != null)
+                {
+                    plantEL.Plantleavesimage = methods.ConvertImageToByteArray(pbLeaves.Image);
+                }
+                else
+                {
+                    plantEL.Plantleavesimage = null;
+                }
+
+
+                
+                
 
                 if (s.Equals("ADD"))
                 {
@@ -236,22 +266,9 @@ namespace plants.PL.Registrations
                 txtFamily.Text = plantEL.Plantfamily;
                 txtPlantMorphology.Text = plantEL.Plantmorphology;
                 txtEconomicImportance.Text = plantEL.Planteconomicimportance;
-
-                if (plantEL.Plantwholeimage.Length != 0)
-                {
-                    pbWholePlant.Image = methods.ConverteByteArrayToImage(plantEL.Plantwholeimage);
-                }
-
-                if (plantEL.Plantleavesimage.Length != 0)
-                {
-                    pbLeaves.Image = methods.ConverteByteArrayToImage(plantEL.Plantleavesimage);
-                }
-
-                if (plantEL.Plantflowerimage.Length != 0)
-                {
-                    pbFlower.Image = methods.ConverteByteArrayToImage(plantEL.Plantflowerimage);
-                }
-
+                pbWholePlant.Image = methods.ConverteByteArrayToImage(plantEL.Plantwholeimage);
+                pbLeaves.Image = methods.ConverteByteArrayToImage(plantEL.Plantleavesimage);
+                pbFlower.Image = methods.ConverteByteArrayToImage(plantEL.Plantflowerimage);
 
             }
             else if (e.ColumnIndex == 1)

@@ -313,6 +313,16 @@ namespace plants.PL.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_icon_png_8 {
+            get {
+                object obj = ResourceManager.GetObject("image-icon-png-8", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap leaves {
             get {
                 object obj = ResourceManager.GetObject("leaves", resourceCulture);

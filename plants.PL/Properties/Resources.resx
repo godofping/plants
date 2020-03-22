@@ -124,8 +124,8 @@
   <data name="006-back" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\006-back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="carrot" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\carrot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trees" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trees.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="038-bushes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\038-bushes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,23 +139,17 @@
   <data name="durian (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\durian (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bushes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bushes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trees" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\trees.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="onion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\onion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="045-file-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\045-file-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="010-cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\010-cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="038-visualization" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\038-visualization.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="010-cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\010-cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="onion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\onion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="grass" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grass.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,14 +157,17 @@
   <data name="043-tulips" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\043-tulips.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="041-fruit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\041-fruit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="004-onion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\004-onion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="durian" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\durian.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\leaves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bushes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bushes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="057-folder-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\057-folder-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,8 +187,14 @@
   <data name="plant" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plant.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="carrot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carrot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="020-stopwatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\020-stopwatch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leaves" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaves.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="096-search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\096-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,7 +205,7 @@
   <data name="036-grass1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\036-grass1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="041-fruit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\041-fruit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image-icon-png-8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image-icon-png-8.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
