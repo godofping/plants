@@ -58,18 +58,18 @@ namespace plants.PL.Registrations
 
         private void CalculateAfterStopTypingDGV()
         {
-            delay += 200;
+            delay += 150;
             if (delayedCalculationThreadDGV != null && delayedCalculationThreadDGV.IsAlive)
                 return;
 
             delayedCalculationThreadDGV = new Thread(() =>
             {
-                while (delay >= 200)
+                while (delay >= 150)
                 {
-                    delay = delay - 200;
+                    delay = delay - 150;
                     try
                     {
-                        Thread.Sleep(200);
+                        Thread.Sleep(150);
                     }
                     catch (Exception) { }
                 }
