@@ -5,3 +5,4 @@ C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.AssemblyInfo
 C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.AssemblyInfo.cs
 C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.dll
 C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.pdb
+C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.csprojAssemblyReference.cache

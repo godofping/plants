@@ -17,3 +17,4 @@ C:\xampp\htdocs\plants\plants.PL\obj\Debug\plants.PL.Registrations.frmPlant.reso
 C:\xampp\htdocs\plants\plants.PL\bin\Debug\plants.DL.dll
 C:\xampp\htdocs\plants\plants.PL\bin\Debug\MySql.Data.dll
 C:\xampp\htdocs\plants\plants.PL\bin\Debug\plants.DL.pdb
+C:\xampp\htdocs\plants\plants.PL\obj\Debug\plants.PL.Registrations.frmPlantAddEdit.resources

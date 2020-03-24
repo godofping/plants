@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -14,7 +16,7 @@ namespace plants.PL.Registrations
 {
     public partial class frmPlant : Form
     {
-
+        
         string s = "";
         Thread delayedCalculationThreadDGV;
         int delay = 0;
@@ -91,37 +93,22 @@ namespace plants.PL.Registrations
 
         private void PopulateDGV()
         {
-            methods.LoadDGV(dgv, plantBL.List(plantcategoryEL.Plantcategoryid, txtSearch.Text));
+            var dt = plantBL.List(plantcategoryEL.Plantcategoryid, txtSearch.Text);
+            methods.LoadDGV(dgv, dt);
+            lblNumberOfResults.Text = "Showing " + dt.Rows.Count + " item(s).";
         }
 
 
-        private void ResetForm()
-        {
-            txtCommonName.ResetText();
-            txtScientificName.ResetText();
-            txtFamily.ResetText();
-            txtPlantMorphology.ResetText();
-            txtEconomicImportance.ResetText();
-            pbWholePlant.Image = Resources.image_icon_png_8;
-            pbFlower.Image = Resources.image_icon_png_8;
-            pbLeaves.Image = Resources.image_icon_png_8;
-        }
-
-        private void ShowForm(Boolean bol)
-        {
-            pnlForm.Visible = bol;
-            pnlMain.Visible = !bol;
-            ResetForm();
-        }
 
 
-        private void ShowResult(bool bol)
+
+
+        public void ShowResult(bool bol)
         {
             if (bol)
             {
                 MessageBox.Show("Success");
                 PopulateDGV();
-                ShowForm(false);
             }
             else
             {
@@ -132,118 +119,17 @@ namespace plants.PL.Registrations
 
         private void frmPlantsList_Load(object sender, EventArgs e)
         {
-            ShowForm(false);
             ManageDGV();
         }
 
 
-        private void pbAdd_Click(object sender, EventArgs e)
-        {
-            s = "ADD";
-            ShowForm(true);
-            lblHeader.Text = "Add Plant";
-        }
+    
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            ShowForm(false);
-        }
-
-        private void pbClose_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void pbAddImage_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-            if (open.ShowDialog() == DialogResult.OK)
-            {
-                pbWholePlant.Image = new Bitmap(open.FileName);
-            }
-        }
-
-        private void pbAddImageFlower_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-            if (open.ShowDialog() == DialogResult.OK)
-            {
-                pbFlower.Image = new Bitmap(open.FileName);
-            }
-        }
-
-        private void pbAddLeavesImage_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-            if (open.ShowDialog() == DialogResult.OK)
-            {
-                pbLeaves.Image = new Bitmap(open.FileName);
-            }
-        }
-
-        private void pbSave_Click(object sender, EventArgs e)
-        {
-            if (methods.CheckRequiredTXT(txtCommonName, txtScientificName))
-            {
-
-                plantEL.Plantcategoryid = plantcategoryEL.Plantcategoryid;
-                plantEL.Plantcommonname = txtCommonName.Text;
-                plantEL.Plantscientificname = txtScientificName.Text;
-                plantEL.Plantfamily = txtFamily.Text;
-                plantEL.Plantmorphology = txtPlantMorphology.Text;
-                plantEL.Planteconomicimportance = txtEconomicImportance.Text;
+   
+ 
 
 
-                if (pbWholePlant.Image != null)
-                {
-                    plantEL.Plantwholeimage = methods.ConvertImageToByteArray(pbWholePlant.Image);
-                }
-                else
-                {
-                    plantEL.Plantwholeimage = null;
-                }
-
-                if (pbWholePlant.Image != null)
-                {
-                    plantEL.Plantflowerimage = methods.ConvertImageToByteArray(pbFlower.Image);
-                }
-                else
-                {
-                    plantEL.Plantflowerimage = null;
-                }
-
-                if (pbWholePlant.Image != null)
-                {
-                    plantEL.Plantleavesimage = methods.ConvertImageToByteArray(pbLeaves.Image);
-                }
-                else
-                {
-                    plantEL.Plantleavesimage = null;
-                }
-
-
-                
-                
-
-                if (s.Equals("ADD"))
-                {
-                    plantEL.Plantid = 0;
-                    ShowResult(plantBL.Insert(plantEL) > 0);
-                }
-                else if (s.Equals("EDIT"))
-                {
-                    ShowResult(plantBL.Update(plantEL));
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please fill out all fields marked by *");
-            }
-        }
-
+ 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             CalculateAfterStopTypingDGV();
@@ -255,21 +141,9 @@ namespace plants.PL.Registrations
                 plantEL.Plantid = Convert.ToInt32(dgv.Rows[e.RowIndex].Cells["plantid"].Value);
             if (e.ColumnIndex == 0)
             {
-                s = "EDIT";
-                ShowForm(true);
-                lblHeader.Text = "Update Plant";
-
-                plantEL = plantBL.Select(plantEL);
-
-                txtCommonName.Text = plantEL.Plantcommonname;
-                txtScientificName.Text = plantEL.Plantscientificname;
-                txtFamily.Text = plantEL.Plantfamily;
-                txtPlantMorphology.Text = plantEL.Plantmorphology;
-                txtEconomicImportance.Text = plantEL.Planteconomicimportance;
-                pbWholePlant.Image = methods.ConverteByteArrayToImage(plantEL.Plantwholeimage);
-                pbLeaves.Image = methods.ConverteByteArrayToImage(plantEL.Plantleavesimage);
-                pbFlower.Image = methods.ConverteByteArrayToImage(plantEL.Plantflowerimage);
-
+                var frm = new PL.Registrations.frmPlantAddEdit("EDIT", plantEL, this, plantcategoryEL);
+                frm.ShowDialog();
+  
             }
             else if (e.ColumnIndex == 1)
             {
@@ -279,6 +153,12 @@ namespace plants.PL.Registrations
                     ShowResult(plantBL.Delete(plantEL));
                 }
             }
+        }
+
+        private void pbAdd_Click(object sender, EventArgs e)
+        {
+            var frm = new PL.Registrations.frmPlantAddEdit("ADD", plantEL, this, plantcategoryEL);
+            frm.ShowDialog();
         }
     }
 }

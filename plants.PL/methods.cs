@@ -2,6 +2,7 @@
 using System.Data;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Windows.Forms;
 
@@ -106,6 +107,7 @@ namespace plants.PL
         public static byte[] ConvertImageToByteArray(Image x)
         {
             Bitmap bitmapp = new Bitmap(x);
+            bitmapp.SetResolution(300, 300);
             ImageConverter _imageConverter = new ImageConverter();
             byte[] xByte = (byte[])_imageConverter.ConvertTo(bitmapp, typeof(byte[]));
             return xByte;
@@ -123,6 +125,24 @@ namespace plants.PL
         public static string ConvertToMoneyFormat(object obj)
         {
             return "₱" + String.Format("{0:n}", obj);
+        }
+
+        public static string CopyFile(string _oldpath, string _newpath, string _newfilename)
+        {
+            string oldpath = _oldpath;
+            string newpath = _newpath;
+            string newfilename = _newfilename;
+            FileInfo f1 = new FileInfo(oldpath);
+            if (f1.Exists)
+            {
+                if (!Directory.Exists(newpath))
+                {
+                    Directory.CreateDirectory(newpath);
+                }
+                f1.CopyTo(string.Format("{0}{1}{2}", newpath, newfilename, f1.Extension),true);
+            }
+
+            return newpath + newfilename + f1.Extension;
         }
 
         public static void DGVBUTTONAdd(DataGridView dgv)
@@ -646,6 +666,13 @@ namespace plants.PL
             }
         }
 
+        public static string RandomString(int length)
+        {
+            Random random = new Random();
+            const string chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+              .Select(s => s[random.Next(s.Length)]).ToArray());
+        }
 
 
         public static void ReadOnlyTXT(bool bol, params TextBox[] i)

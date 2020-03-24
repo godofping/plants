@@ -13,9 +13,9 @@ namespace plants.EL.Registrations
         string plantfamily;
         string plantmorphology;
         string planteconomicimportance;
-        Byte[] plantwholeimage;
-        Byte[] plantflowerimage;
-        Byte[] plantleavesimage;
+        string plantwholeimage;
+        string plantflowerimage;
+        string plantleavesimage;
 
         public int Plantid { get => plantid; set => plantid = value; }
         public int Plantcategoryid { get => plantcategoryid; set => plantcategoryid = value; }
@@ -24,8 +24,8 @@ namespace plants.EL.Registrations
         public string Plantfamily { get => plantfamily; set => plantfamily = value; }
         public string Plantmorphology { get => plantmorphology; set => plantmorphology = value; }
         public string Planteconomicimportance { get => planteconomicimportance; set => planteconomicimportance = value; }
-        public byte[] Plantwholeimage { get => plantwholeimage; set => plantwholeimage = value; }
-        public byte[] Plantflowerimage { get => plantflowerimage; set => plantflowerimage = value; }
-        public byte[] Plantleavesimage { get => plantleavesimage; set => plantleavesimage = value; }
+        public string Plantwholeimage { get => plantwholeimage; set => plantwholeimage = value; }
+        public string Plantflowerimage { get => plantflowerimage; set => plantflowerimage = value; }
+        public string Plantleavesimage { get => plantleavesimage; set => plantleavesimage = value; }
     }
 }

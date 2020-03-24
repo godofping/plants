@@ -67,6 +67,12 @@
     <Compile Include="Registrations\frmPlant.Designer.cs">
       <DependentUpon>frmPlant.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registrations\frmPlantAddEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registrations\frmPlantAddEdit.Designer.cs">
+      <DependentUpon>frmPlantAddEdit.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
     </EmbeddedResource>
@@ -85,6 +91,9 @@
     </Compile>
     <EmbeddedResource Include="Registrations\frmPlant.resx">
       <DependentUpon>frmPlant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registrations\frmPlantAddEdit.resx">
+      <DependentUpon>frmPlantAddEdit.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

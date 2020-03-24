@@ -42,9 +42,9 @@ namespace plants.DL.Registrations
                 plantEL.Plantfamily = dt.Rows[0]["plantfamily"].ToString();
                 plantEL.Plantmorphology = dt.Rows[0]["plantmorphology"].ToString();
                 plantEL.Planteconomicimportance = dt.Rows[0]["planteconomicimportance"].ToString();
-                plantEL.Plantwholeimage = (byte[])dt.Rows[0]["plantwholeimage"];
-                plantEL.Plantflowerimage = (byte[])dt.Rows[0]["plantflowerimage"];
-                plantEL.Plantleavesimage = (byte[])dt.Rows[0]["plantleavesimage"];
+                plantEL.Plantwholeimage = dt.Rows[0]["plantwholeimage"].ToString();
+                plantEL.Plantflowerimage = dt.Rows[0]["plantflowerimage"].ToString();
+                plantEL.Plantleavesimage = dt.Rows[0]["plantleavesimage"].ToString();
 
                 return plantEL;
             }
