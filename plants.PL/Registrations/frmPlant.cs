@@ -17,7 +17,7 @@ namespace plants.PL.Registrations
     public partial class frmPlant : Form
     {
         
-        string s = "";
+    
         Thread delayedCalculationThreadDGV;
         int delay = 0;
 
@@ -88,7 +88,7 @@ namespace plants.PL.Registrations
             methods.DGVTheme(dgv);
             methods.DGVRenameColumns(dgv, "plantid", "Common Name", "Scientific Name");
             methods.DGVHiddenColumns(dgv, "plantid");
-            methods.DGVBUTTONEditDelete(dgv);
+            methods.DGVBUTTONView(dgv);
         }
 
         private void PopulateDGV()
@@ -137,27 +137,20 @@ namespace plants.PL.Registrations
 
         private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 0 | e.ColumnIndex == 1)
-                plantEL.Plantid = Convert.ToInt32(dgv.Rows[e.RowIndex].Cells["plantid"].Value);
+            plantEL.Plantid = Convert.ToInt32(dgv.Rows[e.RowIndex].Cells["plantid"].Value);
+
             if (e.ColumnIndex == 0)
             {
-                var frm = new PL.Registrations.frmPlantAddEdit("EDIT", plantEL, this, plantcategoryEL);
+                var frm = new PL.Registrations.frmPlantCRUD("VIEW", plantEL, this, plantcategoryEL);
                 frm.ShowDialog();
   
             }
-            else if (e.ColumnIndex == 1)
-            {
-                DialogResult dialogResult = MessageBox.Show("Are you sure to delete this selected item?", "Deleting", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    ShowResult(plantBL.Delete(plantEL));
-                }
-            }
+       
         }
 
         private void pbAdd_Click(object sender, EventArgs e)
         {
-            var frm = new PL.Registrations.frmPlantAddEdit("ADD", plantEL, this, plantcategoryEL);
+            var frm = new PL.Registrations.frmPlantCRUD("ADD", plantEL, this, plantcategoryEL);
             frm.ShowDialog();
         }
     }

@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace plants.PL.Registrations
 {
-    public partial class frmPlantAddEdit : Form
+    public partial class frmPlantCRUD : Form
     {
         string oldWholePlant;
         string oldFlower;
@@ -20,7 +20,13 @@ namespace plants.PL.Registrations
         BL.Registrations.Plantcategories plantcategoryBL = new BL.Registrations.Plantcategories();
         PL.Registrations.frmPlant frmPlant;
 
-        public frmPlantAddEdit(string _s, EL.Registrations.Plants _plantEL, PL.Registrations.frmPlant _frmPlant, EL.Registrations.Plantcategories _plantcategoryEL)
+        private void ShowForm(bool bol)
+        {
+            pnlForm.Visible = bol;
+            pnlView.Visible = !bol;
+        }
+
+        public frmPlantCRUD(string _s, EL.Registrations.Plants _plantEL, PL.Registrations.frmPlant _frmPlant, EL.Registrations.Plantcategories _plantcategoryEL)
         {
             InitializeComponent();
 
@@ -30,6 +36,9 @@ namespace plants.PL.Registrations
 
             if (s.Equals("ADD"))
             {
+
+                ShowForm(true);
+
                 lblHeader.Text = "Add Plant";
 
                 plantEL = new EL.Registrations.Plants();
@@ -48,32 +57,30 @@ namespace plants.PL.Registrations
                 pbFlower.Image = Image.FromFile(path + "image-icon-png-8.png");
 
             }
-            else if (s.Equals("EDIT"))
+
+            else if (s.Equals("VIEW"))
             {
-                lblHeader.Text = "Update Plant";
-                plantEL = plantBL.Select(_plantEL);
-
-                txtCommonName.Text = plantEL.Plantcommonname;
-                txtScientificName.Text = plantEL.Plantscientificname;
-                txtFamily.Text = plantEL.Plantfamily;
-                txtPlantMorphology.Text = plantEL.Plantmorphology;
-                txtEconomicImportance.Text = plantEL.Planteconomicimportance;
-
-                oldFlower = plantEL.Plantflowerimage;
-                oldLeaves = plantEL.Plantleavesimage;
-                oldWholePlant = plantEL.Plantwholeimage;
-
-
-                pbWholePlant.Image = Image.FromFile(plantEL.Plantwholeimage);
-                pbLeaves.Image = Image.FromFile(plantEL.Plantleavesimage);
-                pbFlower.Image = Image.FromFile(plantEL.Plantflowerimage);
-
-
+                View(_plantEL);
+                pbCloseAdd.Visible = false;
             }
+        }
+
+        private void View(EL.Registrations.Plants _plantEL)
+        {
+            ShowForm(false);
+
+            plantEL = plantBL.Select(_plantEL);
+
+            lblCommonNameView.Text = "Common name: " + plantEL.Plantcommonname;
+            lblScientificNameView.Text = "Scientific name: " + plantEL.Plantscientificname;
+            lblFamilyView.Text = "Family: " + plantEL.Plantfamily;
+            lblPlantMorphologyView.Text = "Plant Morphology: " + plantEL.Plantmorphology;
+            lblEconomicImportanceView.Text = "Economic Importance: " + plantEL.Planteconomicimportance;
 
 
-
-
+            pbWholePlantView.Image = Image.FromFile(plantEL.Plantwholeimage);
+            pbLeavesView.Image = Image.FromFile(plantEL.Plantleavesimage);
+            pbFlowersView.Image = Image.FromFile(plantEL.Plantflowerimage);
         }
 
         protected override CreateParams CreateParams
@@ -93,6 +100,8 @@ namespace plants.PL.Registrations
                 DoubleBuffered = true;
             }
         }
+
+        
 
         private void pbAddImageWholePlant_Click(object sender, EventArgs e)
         {
@@ -195,7 +204,7 @@ namespace plants.PL.Registrations
                 else if (s.Equals("EDIT"))
                 {
                     frmPlant.ShowResult(plantBL.Update(plantEL));
-                    this.Dispose();
+                    View(plantEL);
                 }
             }
             else
@@ -204,7 +213,53 @@ namespace plants.PL.Registrations
             }
         }
 
-        private void pbCancel_Click(object sender, EventArgs e)
+     
+
+        private void pbDelete_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Are you sure to delete this selected item?", "Deleting", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                frmPlant.ShowResult(plantBL.Delete(plantEL));
+                this.Dispose();
+            }
+        }
+
+        private void pbEdit_Click(object sender, EventArgs e)
+        {
+            s = "EDIT";
+            ShowForm(true);
+
+
+            lblHeader.Text = "Update Plant";
+
+            txtCommonName.Text = plantEL.Plantcommonname;
+            txtScientificName.Text = plantEL.Plantscientificname;
+            txtFamily.Text = plantEL.Plantfamily;
+            txtPlantMorphology.Text = plantEL.Plantmorphology;
+            txtEconomicImportance.Text = plantEL.Planteconomicimportance;
+
+            oldFlower = plantEL.Plantflowerimage;
+            oldLeaves = plantEL.Plantleavesimage;
+            oldWholePlant = plantEL.Plantwholeimage;
+
+
+            pbWholePlant.Image = Image.FromFile(plantEL.Plantwholeimage);
+            pbLeaves.Image = Image.FromFile(plantEL.Plantleavesimage);
+            pbFlower.Image = Image.FromFile(plantEL.Plantflowerimage);
+        }
+
+        private void pbBack_Click(object sender, EventArgs e)
+        {
+            ShowForm(false);
+        }
+
+        private void pbClose_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void pbCloseAdd_Click(object sender, EventArgs e)
         {
             this.Dispose();
         }

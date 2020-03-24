@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlMain = new System.Windows.Forms.Panel();
+            this.lblNumberOfResults = new System.Windows.Forms.Label();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.pnlSplitter = new System.Windows.Forms.Panel();
             this.pbPlantCategoryPicture = new System.Windows.Forms.PictureBox();
@@ -40,7 +41,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.lblNumberOfResults = new System.Windows.Forms.Label();
             this.pnlMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPlantCategoryPicture)).BeginInit();
@@ -63,6 +63,17 @@
             this.pnlMain.Name = "pnlMain";
             this.pnlMain.Size = new System.Drawing.Size(1024, 1061);
             this.pnlMain.TabIndex = 7;
+            // 
+            // lblNumberOfResults
+            // 
+            this.lblNumberOfResults.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNumberOfResults.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumberOfResults.Location = new System.Drawing.Point(683, 157);
+            this.lblNumberOfResults.Name = "lblNumberOfResults";
+            this.lblNumberOfResults.Size = new System.Drawing.Size(321, 24);
+            this.lblNumberOfResults.TabIndex = 13;
+            this.lblNumberOfResults.Text = "label1";
+            this.lblNumberOfResults.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // dgv
             // 
@@ -168,17 +179,6 @@
             this.txtSearch.TabIndex = 3;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // lblNumberOfResults
-            // 
-            this.lblNumberOfResults.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNumberOfResults.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNumberOfResults.Location = new System.Drawing.Point(683, 157);
-            this.lblNumberOfResults.Name = "lblNumberOfResults";
-            this.lblNumberOfResults.Size = new System.Drawing.Size(321, 24);
-            this.lblNumberOfResults.TabIndex = 13;
-            this.lblNumberOfResults.Text = "label1";
-            this.lblNumberOfResults.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // frmPlant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -193,7 +193,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frmPlant";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PLANTS DATABASE";
+            this.Text = "Plants Information System";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmPlantsList_Load);
             this.pnlMain.ResumeLayout(false);

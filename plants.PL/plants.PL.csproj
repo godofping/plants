@@ -67,11 +67,11 @@
     <Compile Include="Registrations\frmPlant.Designer.cs">
       <DependentUpon>frmPlant.cs</DependentUpon>
     </Compile>
-    <Compile Include="Registrations\frmPlantAddEdit.cs">
+    <Compile Include="Registrations\frmPlantCRUD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrations\frmPlantAddEdit.Designer.cs">
-      <DependentUpon>frmPlantAddEdit.cs</DependentUpon>
+    <Compile Include="Registrations\frmPlantCRUD.Designer.cs">
+      <DependentUpon>frmPlantCRUD.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmLoading.resx">
       <DependentUpon>frmLoading.cs</DependentUpon>
@@ -92,8 +92,8 @@
     <EmbeddedResource Include="Registrations\frmPlant.resx">
       <DependentUpon>frmPlant.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Registrations\frmPlantAddEdit.resx">
-      <DependentUpon>frmPlantAddEdit.cs</DependentUpon>
+    <EmbeddedResource Include="Registrations\frmPlantCRUD.resx">
+      <DependentUpon>frmPlantCRUD.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -207,6 +207,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\image-icon-png-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\041-pencil1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\055-garbage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006-back1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
