@@ -107,7 +107,7 @@ namespace plants.PL.Registrations
         private void pbAddImageWholePlant_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            open.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
             if (open.ShowDialog() == DialogResult.OK)
             {
 
@@ -120,7 +120,7 @@ namespace plants.PL.Registrations
         private void pbAddImageFlower_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            open.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
             if (open.ShowDialog() == DialogResult.OK)
             {
                 plantEL.Plantflowerimage = open.FileName;
@@ -131,7 +131,7 @@ namespace plants.PL.Registrations
         private void pbAddLeavesImage_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            open.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
             if (open.ShowDialog() == DialogResult.OK)
             {
                 plantEL.Plantleavesimage = open.FileName;

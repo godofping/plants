@@ -57,6 +57,10 @@
             this.pbSave = new System.Windows.Forms.PictureBox();
             this.pbBack = new System.Windows.Forms.PictureBox();
             this.pnlView = new System.Windows.Forms.Panel();
+            this.pnlWrapEconomicImportance = new System.Windows.Forms.Panel();
+            this.lblEconomicImportanceView = new System.Windows.Forms.Label();
+            this.pnlWrapPlantMorphology = new System.Windows.Forms.Panel();
+            this.lblPlantMorphologyView = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -68,8 +72,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pbFlowersView = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblEconomicImportanceView = new System.Windows.Forms.Label();
-            this.lblPlantMorphologyView = new System.Windows.Forms.Label();
             this.lblFamilyView = new System.Windows.Forms.Label();
             this.lblScientificNameView = new System.Windows.Forms.Label();
             this.lblCommonNameView = new System.Windows.Forms.Label();
@@ -78,8 +80,6 @@
             this.pbClose = new System.Windows.Forms.PictureBox();
             this.pbWholePlantView = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.pnlWrapPlantMorphology = new System.Windows.Forms.Panel();
-            this.pnlWrapEconomicImportance = new System.Windows.Forms.Panel();
             this.pnlForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloseAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlower)).BeginInit();
@@ -92,14 +92,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
             this.pnlView.SuspendLayout();
+            this.pnlWrapEconomicImportance.SuspendLayout();
+            this.pnlWrapPlantMorphology.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLeavesView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlowersView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWholePlantView)).BeginInit();
-            this.pnlWrapPlantMorphology.SuspendLayout();
-            this.pnlWrapEconomicImportance.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlForm
@@ -459,6 +459,54 @@
             this.pnlView.TabIndex = 36;
             this.pnlView.Visible = false;
             // 
+            // pnlWrapEconomicImportance
+            // 
+            this.pnlWrapEconomicImportance.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlWrapEconomicImportance.AutoScroll = true;
+            this.pnlWrapEconomicImportance.Controls.Add(this.lblEconomicImportanceView);
+            this.pnlWrapEconomicImportance.Location = new System.Drawing.Point(380, 672);
+            this.pnlWrapEconomicImportance.MaximumSize = new System.Drawing.Size(963, 296);
+            this.pnlWrapEconomicImportance.Name = "pnlWrapEconomicImportance";
+            this.pnlWrapEconomicImportance.Size = new System.Drawing.Size(963, 296);
+            this.pnlWrapEconomicImportance.TabIndex = 32;
+            // 
+            // lblEconomicImportanceView
+            // 
+            this.lblEconomicImportanceView.AutoSize = true;
+            this.lblEconomicImportanceView.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEconomicImportanceView.Location = new System.Drawing.Point(3, 0);
+            this.lblEconomicImportanceView.MaximumSize = new System.Drawing.Size(963, 0);
+            this.lblEconomicImportanceView.Name = "lblEconomicImportanceView";
+            this.lblEconomicImportanceView.Size = new System.Drawing.Size(189, 21);
+            this.lblEconomicImportanceView.TabIndex = 19;
+            this.lblEconomicImportanceView.Text = "Economic Importance:";
+            // 
+            // pnlWrapPlantMorphology
+            // 
+            this.pnlWrapPlantMorphology.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlWrapPlantMorphology.AutoScroll = true;
+            this.pnlWrapPlantMorphology.Controls.Add(this.lblPlantMorphologyView);
+            this.pnlWrapPlantMorphology.Location = new System.Drawing.Point(380, 323);
+            this.pnlWrapPlantMorphology.MaximumSize = new System.Drawing.Size(963, 296);
+            this.pnlWrapPlantMorphology.Name = "pnlWrapPlantMorphology";
+            this.pnlWrapPlantMorphology.Size = new System.Drawing.Size(963, 296);
+            this.pnlWrapPlantMorphology.TabIndex = 31;
+            // 
+            // lblPlantMorphologyView
+            // 
+            this.lblPlantMorphologyView.AutoSize = true;
+            this.lblPlantMorphologyView.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.lblPlantMorphologyView.Location = new System.Drawing.Point(3, 0);
+            this.lblPlantMorphologyView.MaximumSize = new System.Drawing.Size(963, 0);
+            this.lblPlantMorphologyView.Name = "lblPlantMorphologyView";
+            this.lblPlantMorphologyView.Size = new System.Drawing.Size(151, 21);
+            this.lblPlantMorphologyView.TabIndex = 18;
+            this.lblPlantMorphologyView.Text = "Plant Morphology:";
+            // 
             // panel1
             // 
             this.panel1.Location = new System.Drawing.Point(8, 986);
@@ -561,28 +609,6 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Image of the whole plant";
             // 
-            // lblEconomicImportanceView
-            // 
-            this.lblEconomicImportanceView.AutoSize = true;
-            this.lblEconomicImportanceView.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEconomicImportanceView.Location = new System.Drawing.Point(3, 0);
-            this.lblEconomicImportanceView.MaximumSize = new System.Drawing.Size(963, 0);
-            this.lblEconomicImportanceView.Name = "lblEconomicImportanceView";
-            this.lblEconomicImportanceView.Size = new System.Drawing.Size(189, 21);
-            this.lblEconomicImportanceView.TabIndex = 19;
-            this.lblEconomicImportanceView.Text = "Economic Importance:";
-            // 
-            // lblPlantMorphologyView
-            // 
-            this.lblPlantMorphologyView.AutoSize = true;
-            this.lblPlantMorphologyView.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.lblPlantMorphologyView.Location = new System.Drawing.Point(3, 0);
-            this.lblPlantMorphologyView.MaximumSize = new System.Drawing.Size(963, 0);
-            this.lblPlantMorphologyView.Name = "lblPlantMorphologyView";
-            this.lblPlantMorphologyView.Size = new System.Drawing.Size(151, 21);
-            this.lblPlantMorphologyView.TabIndex = 18;
-            this.lblPlantMorphologyView.Text = "Plant Morphology:";
-            // 
             // lblFamilyView
             // 
             this.lblFamilyView.AutoSize = true;
@@ -667,32 +693,6 @@
             this.pbWholePlantView.TabIndex = 0;
             this.pbWholePlantView.TabStop = false;
             // 
-            // pnlWrapPlantMorphology
-            // 
-            this.pnlWrapPlantMorphology.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlWrapPlantMorphology.AutoScroll = true;
-            this.pnlWrapPlantMorphology.Controls.Add(this.lblPlantMorphologyView);
-            this.pnlWrapPlantMorphology.Location = new System.Drawing.Point(380, 323);
-            this.pnlWrapPlantMorphology.MaximumSize = new System.Drawing.Size(963, 296);
-            this.pnlWrapPlantMorphology.Name = "pnlWrapPlantMorphology";
-            this.pnlWrapPlantMorphology.Size = new System.Drawing.Size(963, 296);
-            this.pnlWrapPlantMorphology.TabIndex = 31;
-            // 
-            // pnlWrapEconomicImportance
-            // 
-            this.pnlWrapEconomicImportance.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlWrapEconomicImportance.AutoScroll = true;
-            this.pnlWrapEconomicImportance.Controls.Add(this.lblEconomicImportanceView);
-            this.pnlWrapEconomicImportance.Location = new System.Drawing.Point(380, 672);
-            this.pnlWrapEconomicImportance.MaximumSize = new System.Drawing.Size(963, 296);
-            this.pnlWrapEconomicImportance.Name = "pnlWrapEconomicImportance";
-            this.pnlWrapEconomicImportance.Size = new System.Drawing.Size(963, 296);
-            this.pnlWrapEconomicImportance.TabIndex = 32;
-            // 
             // frmPlantCRUD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -700,8 +700,8 @@
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1024, 1061);
-            this.Controls.Add(this.pnlView);
             this.Controls.Add(this.pnlForm);
+            this.Controls.Add(this.pnlView);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -725,16 +725,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).EndInit();
             this.pnlView.ResumeLayout(false);
             this.pnlView.PerformLayout();
+            this.pnlWrapEconomicImportance.ResumeLayout(false);
+            this.pnlWrapEconomicImportance.PerformLayout();
+            this.pnlWrapPlantMorphology.ResumeLayout(false);
+            this.pnlWrapPlantMorphology.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbLeavesView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlowersView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWholePlantView)).EndInit();
-            this.pnlWrapPlantMorphology.ResumeLayout(false);
-            this.pnlWrapPlantMorphology.PerformLayout();
-            this.pnlWrapEconomicImportance.ResumeLayout(false);
-            this.pnlWrapEconomicImportance.PerformLayout();
             this.ResumeLayout(false);
 
         }
