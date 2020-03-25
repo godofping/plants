@@ -6,7 +6,6 @@ C:\xampp\htdocs\plants\plants.DL\obj\Debug\netstandard2.0\plants.DL.AssemblyInfo
 C:\xampp\htdocs\plants\plants.DL\obj\Debug\netstandard2.0\plants.DL.AssemblyInfo.cs
 C:\xampp\htdocs\plants\plants.DL\obj\Debug\netstandard2.0\plants.DL.dll
 C:\xampp\htdocs\plants\plants.DL\obj\Debug\netstandard2.0\plants.DL.pdb
-C:\xampp\htdocs\plants\plants.DL\bin\Debug\netstandard2.0\mysql.data.dll
 C:\xampp\htdocs\plants\plants.DL\bin\Debug\netstandard2.0\plants.EL.dll
 C:\xampp\htdocs\plants\plants.DL\bin\Debug\netstandard2.0\plants.EL.pdb
 C:\xampp\htdocs\plants\plants.DL\obj\Debug\netstandard2.0\plants.DL.csproj.CopyComplete

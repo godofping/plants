@@ -5,13 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\plants.EL\plants.EL.csproj" />
+    <PackageReference Include="MySql.Data" Version="8.0.19" />
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="MySql.Data">
-      <HintPath>..\..\..\..\Users\Dade Murphy\Desktop\C#\LABS-ADVANCE-DATABASE\purchase order system\pos complete sir\mysql.data.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\plants.EL\plants.EL.csproj" />
   </ItemGroup>
 
 </Project>
