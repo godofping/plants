@@ -71,16 +71,17 @@ namespace plants.PL.Registrations
 
             plantEL = plantBL.Select(_plantEL);
 
-            lblCommonNameView.Text = "Common name: " + plantEL.Plantcommonname;
-            lblScientificNameView.Text = "Scientific name: " + plantEL.Plantscientificname;
-            lblFamilyView.Text = "Family: " + plantEL.Plantfamily;
-            lblPlantMorphologyView.Text = "Plant Morphology: " + plantEL.Plantmorphology;
-            lblEconomicImportanceView.Text = "Economic Importance: " + plantEL.Planteconomicimportance;
+            lblCommonNameView.Text = plantEL.Plantcommonname;
+            lblScientificNameView.Text =  plantEL.Plantscientificname;
+            lblFamilyView.Text = plantEL.Plantfamily;
+            lblPlantMorphologyView.Text =  plantEL.Plantmorphology;
+            lblEconomicImportanceView.Text = plantEL.Planteconomicimportance;
 
 
             pbWholePlantView.Image = Image.FromFile(plantEL.Plantwholeimage);
             pbLeavesView.Image = Image.FromFile(plantEL.Plantleavesimage);
             pbFlowersView.Image = Image.FromFile(plantEL.Plantflowerimage);
+
         }
 
         protected override CreateParams CreateParams
