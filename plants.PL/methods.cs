@@ -419,7 +419,7 @@ namespace plants.PL
             dgv.DefaultCellStyle.SelectionForeColor = ColorTranslator.FromHtml("#fff");
 
 
-            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 13, FontStyle.Underline | FontStyle.Italic | FontStyle.Bold);
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 13, FontStyle.Italic | FontStyle.Bold);
             dgv.ColumnHeadersDefaultCellStyle.BackColor = ColorTranslator.FromHtml("#8fa6b1");
 
 

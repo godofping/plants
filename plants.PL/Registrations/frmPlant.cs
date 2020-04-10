@@ -137,7 +137,8 @@ namespace plants.PL.Registrations
 
         private void dgv_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            plantEL.Plantid = Convert.ToInt32(dgv.Rows[e.RowIndex].Cells["plantid"].Value);
+            if (e.ColumnIndex == 0)
+                plantEL.Plantid = Convert.ToInt32(dgv.Rows[e.RowIndex].Cells["plantid"].Value);
 
             if (e.ColumnIndex == 0)
             {

@@ -67,7 +67,7 @@
             // lblNumberOfResults
             // 
             this.lblNumberOfResults.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNumberOfResults.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumberOfResults.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNumberOfResults.Location = new System.Drawing.Point(683, 157);
             this.lblNumberOfResults.Name = "lblNumberOfResults";
             this.lblNumberOfResults.Size = new System.Drawing.Size(321, 24);
@@ -111,11 +111,11 @@
             // lblPlantCategory
             // 
             this.lblPlantCategory.AutoSize = true;
-            this.lblPlantCategory.Font = new System.Drawing.Font("Century Gothic", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlantCategory.Font = new System.Drawing.Font("Segoe UI", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlantCategory.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(72)))), ((int)(((byte)(89)))));
             this.lblPlantCategory.Location = new System.Drawing.Point(151, 103);
             this.lblPlantCategory.Name = "lblPlantCategory";
-            this.lblPlantCategory.Size = new System.Drawing.Size(206, 58);
+            this.lblPlantCategory.Size = new System.Drawing.Size(197, 65);
             this.lblPlantCategory.TabIndex = 8;
             this.lblPlantCategory.Text = "Grasses";
             this.lblPlantCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -161,11 +161,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(11, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 33);
+            this.label2.Size = new System.Drawing.Size(101, 37);
             this.label2.TabIndex = 6;
             this.label2.Text = "Search";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

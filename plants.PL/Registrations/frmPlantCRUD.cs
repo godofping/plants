@@ -260,9 +260,6 @@ namespace plants.PL.Registrations
             this.Dispose();
         }
 
-        private void pbCloseAdd_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-        }
+      
     }
 }
