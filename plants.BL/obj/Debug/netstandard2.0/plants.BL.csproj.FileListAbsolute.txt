@@ -1,16 +1,3 @@
-C:\xampp\htdocs\plants\plants.BL\bin\Debug\netstandard2.0\plants.BL.deps.json
-C:\xampp\htdocs\plants\plants.BL\bin\Debug\netstandard2.0\plants.BL.dll
-C:\xampp\htdocs\plants\plants.BL\bin\Debug\netstandard2.0\plants.BL.pdb
-C:\xampp\htdocs\plants\plants.BL\bin\Debug\netstandard2.0\plants.DL.dll
-C:\xampp\htdocs\plants\plants.BL\bin\Debug\netstandard2.0\plants.EL.dll
-C:\xampp\htdocs\plants\plants.BL\bin\Debug\netstandard2.0\plants.DL.pdb
-C:\xampp\htdocs\plants\plants.BL\bin\Debug\netstandard2.0\plants.EL.pdb
-C:\xampp\htdocs\plants\plants.BL\obj\Debug\netstandard2.0\plants.BL.csprojAssemblyReference.cache
-C:\xampp\htdocs\plants\plants.BL\obj\Debug\netstandard2.0\plants.BL.AssemblyInfoInputs.cache
-C:\xampp\htdocs\plants\plants.BL\obj\Debug\netstandard2.0\plants.BL.AssemblyInfo.cs
-C:\xampp\htdocs\plants\plants.BL\obj\Debug\netstandard2.0\plants.BL.csproj.CopyComplete
-C:\xampp\htdocs\plants\plants.BL\obj\Debug\netstandard2.0\plants.BL.dll
-C:\xampp\htdocs\plants\plants.BL\obj\Debug\netstandard2.0\plants.BL.pdb
 C:\Users\ronce\Desktop\plants-master\plants.BL\bin\Debug\netstandard2.0\plants.BL.deps.json
 C:\Users\ronce\Desktop\plants-master\plants.BL\bin\Debug\netstandard2.0\plants.BL.dll
 C:\Users\ronce\Desktop\plants-master\plants.BL\bin\Debug\netstandard2.0\plants.BL.pdb
@@ -38,4 +25,3 @@ C:\Users\ronce\Desktop\plants-master\plants.BL\obj\Debug\netstandard2.0\plants.B
 \\Client200\Users\Public\plants-master\plants.BL\obj\Debug\netstandard2.0\plants.BL.csproj.CopyComplete
 \\Client200\Users\Public\plants-master\plants.BL\obj\Debug\netstandard2.0\plants.BL.dll
 \\Client200\Users\Public\plants-master\plants.BL\obj\Debug\netstandard2.0\plants.BL.pdb
-C:\xampp\htdocs\plants\plants.BL\obj\Debug\netstandard2.0\plants.BL.csproj.CoreCompileInputs.cache

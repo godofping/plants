@@ -95,7 +95,7 @@
     <Compile Include="Registrations\frmPlantCRUD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrations\frmPlantCRUD.Designer.cs">
+    <Compile Include="Registrations\frmPlantCRUD.designer.cs">
       <DependentUpon>frmPlantCRUD.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="frmLoading.resx">

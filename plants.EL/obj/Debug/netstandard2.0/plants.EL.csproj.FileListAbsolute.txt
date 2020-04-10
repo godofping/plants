@@ -1,10 +1,3 @@
-C:\xampp\htdocs\plants\plants.EL\bin\Debug\netstandard2.0\plants.EL.deps.json
-C:\xampp\htdocs\plants\plants.EL\bin\Debug\netstandard2.0\plants.EL.dll
-C:\xampp\htdocs\plants\plants.EL\bin\Debug\netstandard2.0\plants.EL.pdb
-C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.AssemblyInfoInputs.cache
-C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.AssemblyInfo.cs
-C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.dll
-C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.pdb
 C:\Users\ronce\Desktop\plants-master\plants.EL\bin\Debug\netstandard2.0\plants.EL.deps.json
 C:\Users\ronce\Desktop\plants-master\plants.EL\bin\Debug\netstandard2.0\plants.EL.dll
 C:\Users\ronce\Desktop\plants-master\plants.EL\bin\Debug\netstandard2.0\plants.EL.pdb
@@ -21,5 +14,3 @@ C:\Users\ronce\Desktop\plants-master\plants.EL\obj\Debug\netstandard2.0\plants.E
 \\Client200\Users\Public\plants-master\plants.EL\obj\Debug\netstandard2.0\plants.EL.AssemblyInfo.cs
 \\Client200\Users\Public\plants-master\plants.EL\obj\Debug\netstandard2.0\plants.EL.dll
 \\Client200\Users\Public\plants-master\plants.EL\obj\Debug\netstandard2.0\plants.EL.pdb
-C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.csprojAssemblyReference.cache
-C:\xampp\htdocs\plants\plants.EL\obj\Debug\netstandard2.0\plants.EL.csproj.CoreCompileInputs.cache

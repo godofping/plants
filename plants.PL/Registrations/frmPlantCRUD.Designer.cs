@@ -31,91 +31,91 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPlantCRUD));
             this.pnlForm = new System.Windows.Forms.Panel();
-            this.pbFlower = new System.Windows.Forms.PictureBox();
-            this.pbLeaves = new System.Windows.Forms.PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
             this.pbWholePlant = new System.Windows.Forms.PictureBox();
+            this.lblWholePlantImage = new System.Windows.Forms.Label();
+            this.pbLeaves = new System.Windows.Forms.PictureBox();
+            this.pbFlower = new System.Windows.Forms.PictureBox();
+            this.pbAddImageWholePlant = new System.Windows.Forms.PictureBox();
             this.pbAddLeavesImage = new System.Windows.Forms.PictureBox();
+            this.lblFlowerImage = new System.Windows.Forms.Label();
             this.lblLeavesImage = new System.Windows.Forms.Label();
-            this.lblEconomicImportance = new System.Windows.Forms.Label();
-            this.txtEconomicImportance = new System.Windows.Forms.TextBox();
+            this.pbAddImageFlower = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.txtCommonName = new System.Windows.Forms.TextBox();
+            this.lblCommonName = new System.Windows.Forms.Label();
+            this.txtScientificName = new System.Windows.Forms.TextBox();
+            this.lblScientificName = new System.Windows.Forms.Label();
             this.txtFamily = new System.Windows.Forms.TextBox();
             this.lblFamily = new System.Windows.Forms.Label();
-            this.pbAddImageWholePlant = new System.Windows.Forms.PictureBox();
-            this.lblWholePlantImage = new System.Windows.Forms.Label();
-            this.pnlHeader = new System.Windows.Forms.Panel();
-            this.pbSave = new System.Windows.Forms.PictureBox();
-            this.lblHeader = new System.Windows.Forms.Label();
-            this.pbCloseAdd = new System.Windows.Forms.PictureBox();
-            this.pbBack = new System.Windows.Forms.PictureBox();
             this.lblPlantMorphology = new System.Windows.Forms.Label();
             this.txtPlantMorphology = new System.Windows.Forms.TextBox();
-            this.lblScientificName = new System.Windows.Forms.Label();
-            this.txtScientificName = new System.Windows.Forms.TextBox();
-            this.lblCommonName = new System.Windows.Forms.Label();
-            this.txtCommonName = new System.Windows.Forms.TextBox();
+            this.txtEconomicImportance = new System.Windows.Forms.TextBox();
+            this.lblEconomicImportance = new System.Windows.Forms.Label();
+            this.pbSave = new System.Windows.Forms.PictureBox();
+            this.pbCloseAdd = new System.Windows.Forms.PictureBox();
+            this.pbBack = new System.Windows.Forms.PictureBox();
+            this.pnlHeader = new System.Windows.Forms.Panel();
+            this.lblHeader = new System.Windows.Forms.Label();
             this.pnlView = new System.Windows.Forms.Panel();
-            this.pnlWrapEconomicImportance = new System.Windows.Forms.Panel();
-            this.lblEconomicImportanceView = new System.Windows.Forms.Label();
-            this.pnlWrapPlantMorphology = new System.Windows.Forms.Panel();
-            this.lblPlantMorphologyView = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pbLeavesView = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pbFlowersView = new System.Windows.Forms.PictureBox();
+            this.pnlWrapPlantMorphology = new System.Windows.Forms.Panel();
+            this.lblPlantMorphologyView = new System.Windows.Forms.Label();
+            this.pnlWrapEconomicImportance = new System.Windows.Forms.Panel();
+            this.lblEconomicImportanceView = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pbWholePlantView = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lblFamilyView = new System.Windows.Forms.Label();
-            this.lblScientificNameView = new System.Windows.Forms.Label();
+            this.pbFlowersView = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pbLeavesView = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.lblCommonNameView = new System.Windows.Forms.Label();
+            this.lblScientificNameView = new System.Windows.Forms.Label();
+            this.lblFamilyView = new System.Windows.Forms.Label();
             this.pbEdit = new System.Windows.Forms.PictureBox();
             this.pbDelete = new System.Windows.Forms.PictureBox();
             this.pbClose = new System.Windows.Forms.PictureBox();
-            this.pbWholePlantView = new System.Windows.Forms.PictureBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.pbAddImageFlower = new System.Windows.Forms.PictureBox();
-            this.lblFlowerImage = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
             this.pnlForm.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbFlower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLeaves)).BeginInit();
+            this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbWholePlant)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAddLeavesImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeaves)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlower)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddImageWholePlant)).BeginInit();
-            this.pnlHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAddLeavesImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAddImageFlower)).BeginInit();
+            this.panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSave)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloseAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).BeginInit();
+            this.pnlHeader.SuspendLayout();
             this.pnlView.SuspendLayout();
-            this.pnlWrapEconomicImportance.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.pnlWrapPlantMorphology.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLeavesView)).BeginInit();
+            this.pnlWrapEconomicImportance.SuspendLayout();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWholePlantView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlowersView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeavesView)).BeginInit();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWholePlantView)).BeginInit();
-            this.panel1.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAddImageFlower)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlForm
@@ -135,33 +135,32 @@
             this.pnlForm.TabIndex = 11;
             this.pnlForm.Visible = false;
             // 
-            // pbFlower
+            // panel10
             // 
-            this.pbFlower.BackColor = System.Drawing.Color.White;
-            this.pbFlower.Image = global::plants.PL.Properties.Resources.image_icon_png_8;
-            this.pbFlower.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFlower.InitialImage")));
-            this.pbFlower.Location = new System.Drawing.Point(26, 392);
-            this.pbFlower.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.pbFlower.Name = "pbFlower";
-            this.pbFlower.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pbFlower.Size = new System.Drawing.Size(196, 172);
-            this.pbFlower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFlower.TabIndex = 34;
-            this.pbFlower.TabStop = false;
+            this.panel10.BackColor = System.Drawing.Color.White;
+            this.panel10.Controls.Add(this.panel11);
+            this.panel10.Controls.Add(this.pbWholePlant);
+            this.panel10.Controls.Add(this.lblWholePlantImage);
+            this.panel10.Controls.Add(this.pbLeaves);
+            this.panel10.Controls.Add(this.pbFlower);
+            this.panel10.Controls.Add(this.pbAddImageWholePlant);
+            this.panel10.Controls.Add(this.pbAddLeavesImage);
+            this.panel10.Controls.Add(this.lblFlowerImage);
+            this.panel10.Controls.Add(this.lblLeavesImage);
+            this.panel10.Controls.Add(this.pbAddImageFlower);
+            this.panel10.Location = new System.Drawing.Point(782, 65);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(484, 583);
+            this.panel10.TabIndex = 44;
             // 
-            // pbLeaves
+            // panel11
             // 
-            this.pbLeaves.BackColor = System.Drawing.Color.White;
-            this.pbLeaves.Image = global::plants.PL.Properties.Resources.image_icon_png_8;
-            this.pbLeaves.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbLeaves.InitialImage")));
-            this.pbLeaves.Location = new System.Drawing.Point(265, 392);
-            this.pbLeaves.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
-            this.pbLeaves.Name = "pbLeaves";
-            this.pbLeaves.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
-            this.pbLeaves.Size = new System.Drawing.Size(196, 172);
-            this.pbLeaves.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLeaves.TabIndex = 33;
-            this.pbLeaves.TabStop = false;
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(41)))), ((int)(((byte)(106)))));
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(13, 583);
+            this.panel11.TabIndex = 25;
             // 
             // pbWholePlant
             // 
@@ -177,6 +176,57 @@
             this.pbWholePlant.TabIndex = 32;
             this.pbWholePlant.TabStop = false;
             // 
+            // lblWholePlantImage
+            // 
+            this.lblWholePlantImage.AutoSize = true;
+            this.lblWholePlantImage.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblWholePlantImage.Location = new System.Drawing.Point(131, 37);
+            this.lblWholePlantImage.Name = "lblWholePlantImage";
+            this.lblWholePlantImage.Size = new System.Drawing.Size(182, 21);
+            this.lblWholePlantImage.TabIndex = 21;
+            this.lblWholePlantImage.Text = "Image of the whole plant";
+            // 
+            // pbLeaves
+            // 
+            this.pbLeaves.BackColor = System.Drawing.Color.White;
+            this.pbLeaves.Image = global::plants.PL.Properties.Resources.image_icon_png_8;
+            this.pbLeaves.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbLeaves.InitialImage")));
+            this.pbLeaves.Location = new System.Drawing.Point(265, 392);
+            this.pbLeaves.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.pbLeaves.Name = "pbLeaves";
+            this.pbLeaves.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.pbLeaves.Size = new System.Drawing.Size(196, 172);
+            this.pbLeaves.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLeaves.TabIndex = 33;
+            this.pbLeaves.TabStop = false;
+            // 
+            // pbFlower
+            // 
+            this.pbFlower.BackColor = System.Drawing.Color.White;
+            this.pbFlower.Image = global::plants.PL.Properties.Resources.image_icon_png_8;
+            this.pbFlower.InitialImage = ((System.Drawing.Image)(resources.GetObject("pbFlower.InitialImage")));
+            this.pbFlower.Location = new System.Drawing.Point(26, 392);
+            this.pbFlower.Margin = new System.Windows.Forms.Padding(3, 3, 3, 50);
+            this.pbFlower.Name = "pbFlower";
+            this.pbFlower.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
+            this.pbFlower.Size = new System.Drawing.Size(196, 172);
+            this.pbFlower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFlower.TabIndex = 34;
+            this.pbFlower.TabStop = false;
+            // 
+            // pbAddImageWholePlant
+            // 
+            this.pbAddImageWholePlant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbAddImageWholePlant.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbAddImageWholePlant.Image = global::plants.PL.Properties.Resources._099_photo_camera;
+            this.pbAddImageWholePlant.Location = new System.Drawing.Point(75, 7);
+            this.pbAddImageWholePlant.Name = "pbAddImageWholePlant";
+            this.pbAddImageWholePlant.Size = new System.Drawing.Size(50, 51);
+            this.pbAddImageWholePlant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAddImageWholePlant.TabIndex = 22;
+            this.pbAddImageWholePlant.TabStop = false;
+            this.pbAddImageWholePlant.Click += new System.EventHandler(this.pbAddImageWholePlant_Click);
+            // 
             // pbAddLeavesImage
             // 
             this.pbAddLeavesImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -190,6 +240,16 @@
             this.pbAddLeavesImage.TabStop = false;
             this.pbAddLeavesImage.Click += new System.EventHandler(this.pbAddLeavesImage_Click);
             // 
+            // lblFlowerImage
+            // 
+            this.lblFlowerImage.AutoSize = true;
+            this.lblFlowerImage.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblFlowerImage.Location = new System.Drawing.Point(82, 365);
+            this.lblFlowerImage.Name = "lblFlowerImage";
+            this.lblFlowerImage.Size = new System.Drawing.Size(145, 21);
+            this.lblFlowerImage.TabIndex = 28;
+            this.lblFlowerImage.Text = "Image of the flower";
+            // 
             // lblLeavesImage
             // 
             this.lblLeavesImage.AutoSize = true;
@@ -200,28 +260,86 @@
             this.lblLeavesImage.TabIndex = 30;
             this.lblLeavesImage.Text = "Image of the leaves";
             // 
-            // lblEconomicImportance
+            // pbAddImageFlower
             // 
-            this.lblEconomicImportance.AutoSize = true;
-            this.lblEconomicImportance.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblEconomicImportance.Location = new System.Drawing.Point(23, 417);
-            this.lblEconomicImportance.Name = "lblEconomicImportance";
-            this.lblEconomicImportance.Size = new System.Drawing.Size(160, 21);
-            this.lblEconomicImportance.TabIndex = 27;
-            this.lblEconomicImportance.Text = "Economic Importance";
+            this.pbAddImageFlower.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pbAddImageFlower.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbAddImageFlower.Image = global::plants.PL.Properties.Resources._099_photo_camera;
+            this.pbAddImageFlower.Location = new System.Drawing.Point(26, 335);
+            this.pbAddImageFlower.Name = "pbAddImageFlower";
+            this.pbAddImageFlower.Size = new System.Drawing.Size(50, 51);
+            this.pbAddImageFlower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAddImageFlower.TabIndex = 29;
+            this.pbAddImageFlower.TabStop = false;
+            this.pbAddImageFlower.Click += new System.EventHandler(this.pbAddImageFlower_Click);
             // 
-            // txtEconomicImportance
+            // panel8
             // 
-            this.txtEconomicImportance.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel8.BackColor = System.Drawing.Color.White;
+            this.panel8.Controls.Add(this.panel9);
+            this.panel8.Controls.Add(this.txtCommonName);
+            this.panel8.Controls.Add(this.lblCommonName);
+            this.panel8.Controls.Add(this.txtScientificName);
+            this.panel8.Controls.Add(this.lblScientificName);
+            this.panel8.Controls.Add(this.txtFamily);
+            this.panel8.Controls.Add(this.lblFamily);
+            this.panel8.Controls.Add(this.lblPlantMorphology);
+            this.panel8.Controls.Add(this.txtPlantMorphology);
+            this.panel8.Controls.Add(this.txtEconomicImportance);
+            this.panel8.Controls.Add(this.lblEconomicImportance);
+            this.panel8.Location = new System.Drawing.Point(12, 65);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(749, 643);
+            this.panel8.TabIndex = 43;
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(69)))));
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(13, 643);
+            this.panel9.TabIndex = 18;
+            // 
+            // txtCommonName
+            // 
+            this.txtCommonName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtEconomicImportance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEconomicImportance.Location = new System.Drawing.Point(27, 447);
-            this.txtEconomicImportance.Multiline = true;
-            this.txtEconomicImportance.Name = "txtEconomicImportance";
-            this.txtEconomicImportance.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtEconomicImportance.Size = new System.Drawing.Size(701, 154);
-            this.txtEconomicImportance.TabIndex = 5;
-            this.txtEconomicImportance.WordWrap = false;
+            this.txtCommonName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCommonName.Location = new System.Drawing.Point(28, 39);
+            this.txtCommonName.Name = "txtCommonName";
+            this.txtCommonName.Size = new System.Drawing.Size(701, 25);
+            this.txtCommonName.TabIndex = 1;
+            // 
+            // lblCommonName
+            // 
+            this.lblCommonName.AutoSize = true;
+            this.lblCommonName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCommonName.Location = new System.Drawing.Point(23, 15);
+            this.lblCommonName.Name = "lblCommonName";
+            this.lblCommonName.Size = new System.Drawing.Size(132, 21);
+            this.lblCommonName.TabIndex = 14;
+            this.lblCommonName.Text = "Common Name *";
+            // 
+            // txtScientificName
+            // 
+            this.txtScientificName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtScientificName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtScientificName.Location = new System.Drawing.Point(28, 103);
+            this.txtScientificName.Name = "txtScientificName";
+            this.txtScientificName.Size = new System.Drawing.Size(701, 25);
+            this.txtScientificName.TabIndex = 2;
+            // 
+            // lblScientificName
+            // 
+            this.lblScientificName.AutoSize = true;
+            this.lblScientificName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScientificName.Location = new System.Drawing.Point(24, 78);
+            this.lblScientificName.Name = "lblScientificName";
+            this.lblScientificName.Size = new System.Drawing.Size(129, 21);
+            this.lblScientificName.TabIndex = 16;
+            this.lblScientificName.Text = "Scientific Name *";
             // 
             // txtFamily
             // 
@@ -243,39 +361,51 @@
             this.lblFamily.TabIndex = 24;
             this.lblFamily.Text = "Family";
             // 
-            // pbAddImageWholePlant
+            // lblPlantMorphology
             // 
-            this.pbAddImageWholePlant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbAddImageWholePlant.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbAddImageWholePlant.Image = global::plants.PL.Properties.Resources._099_photo_camera;
-            this.pbAddImageWholePlant.Location = new System.Drawing.Point(75, 7);
-            this.pbAddImageWholePlant.Name = "pbAddImageWholePlant";
-            this.pbAddImageWholePlant.Size = new System.Drawing.Size(50, 51);
-            this.pbAddImageWholePlant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAddImageWholePlant.TabIndex = 22;
-            this.pbAddImageWholePlant.TabStop = false;
-            this.pbAddImageWholePlant.Click += new System.EventHandler(this.pbAddImageWholePlant_Click);
+            this.lblPlantMorphology.AutoSize = true;
+            this.lblPlantMorphology.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlantMorphology.Location = new System.Drawing.Point(23, 217);
+            this.lblPlantMorphology.Name = "lblPlantMorphology";
+            this.lblPlantMorphology.Size = new System.Drawing.Size(135, 21);
+            this.lblPlantMorphology.TabIndex = 18;
+            this.lblPlantMorphology.Text = "Plant Morphology";
             // 
-            // lblWholePlantImage
+            // txtPlantMorphology
             // 
-            this.lblWholePlantImage.AutoSize = true;
-            this.lblWholePlantImage.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblWholePlantImage.Location = new System.Drawing.Point(131, 37);
-            this.lblWholePlantImage.Name = "lblWholePlantImage";
-            this.lblWholePlantImage.Size = new System.Drawing.Size(182, 21);
-            this.lblWholePlantImage.TabIndex = 21;
-            this.lblWholePlantImage.Text = "Image of the whole plant";
+            this.txtPlantMorphology.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPlantMorphology.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlantMorphology.Location = new System.Drawing.Point(27, 244);
+            this.txtPlantMorphology.Multiline = true;
+            this.txtPlantMorphology.Name = "txtPlantMorphology";
+            this.txtPlantMorphology.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtPlantMorphology.Size = new System.Drawing.Size(702, 154);
+            this.txtPlantMorphology.TabIndex = 4;
+            this.txtPlantMorphology.WordWrap = false;
             // 
-            // pnlHeader
+            // txtEconomicImportance
             // 
-            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(88)))), ((int)(((byte)(176)))));
-            this.pnlHeader.Controls.Add(this.lblHeader);
-            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlHeader.ForeColor = System.Drawing.Color.White;
-            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
-            this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(1280, 51);
-            this.pnlHeader.TabIndex = 19;
+            this.txtEconomicImportance.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtEconomicImportance.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEconomicImportance.Location = new System.Drawing.Point(27, 447);
+            this.txtEconomicImportance.Multiline = true;
+            this.txtEconomicImportance.Name = "txtEconomicImportance";
+            this.txtEconomicImportance.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.txtEconomicImportance.Size = new System.Drawing.Size(701, 154);
+            this.txtEconomicImportance.TabIndex = 5;
+            this.txtEconomicImportance.WordWrap = false;
+            // 
+            // lblEconomicImportance
+            // 
+            this.lblEconomicImportance.AutoSize = true;
+            this.lblEconomicImportance.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblEconomicImportance.Location = new System.Drawing.Point(23, 417);
+            this.lblEconomicImportance.Name = "lblEconomicImportance";
+            this.lblEconomicImportance.Size = new System.Drawing.Size(160, 21);
+            this.lblEconomicImportance.TabIndex = 27;
+            this.lblEconomicImportance.Text = "Economic Importance";
             // 
             // pbSave
             // 
@@ -291,17 +421,6 @@
             this.pbSave.TabStop = false;
             this.toolTip1.SetToolTip(this.pbSave, "Save");
             this.pbSave.Click += new System.EventHandler(this.pbSave_Click);
-            // 
-            // lblHeader
-            // 
-            this.lblHeader.AutoSize = true;
-            this.lblHeader.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHeader.ForeColor = System.Drawing.Color.White;
-            this.lblHeader.Location = new System.Drawing.Point(17, 9);
-            this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(117, 32);
-            this.lblHeader.TabIndex = 13;
-            this.lblHeader.Text = "Add Plant";
             // 
             // pbCloseAdd
             // 
@@ -334,68 +453,27 @@
             this.pbBack.Tag = "Back";
             this.pbBack.Click += new System.EventHandler(this.pbBack_Click);
             // 
-            // lblPlantMorphology
+            // pnlHeader
             // 
-            this.lblPlantMorphology.AutoSize = true;
-            this.lblPlantMorphology.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlantMorphology.Location = new System.Drawing.Point(23, 217);
-            this.lblPlantMorphology.Name = "lblPlantMorphology";
-            this.lblPlantMorphology.Size = new System.Drawing.Size(135, 21);
-            this.lblPlantMorphology.TabIndex = 18;
-            this.lblPlantMorphology.Text = "Plant Morphology";
+            this.pnlHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(88)))), ((int)(((byte)(176)))));
+            this.pnlHeader.Controls.Add(this.lblHeader);
+            this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlHeader.ForeColor = System.Drawing.Color.White;
+            this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Name = "pnlHeader";
+            this.pnlHeader.Size = new System.Drawing.Size(1280, 51);
+            this.pnlHeader.TabIndex = 19;
             // 
-            // txtPlantMorphology
+            // lblHeader
             // 
-            this.txtPlantMorphology.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPlantMorphology.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPlantMorphology.Location = new System.Drawing.Point(27, 244);
-            this.txtPlantMorphology.Multiline = true;
-            this.txtPlantMorphology.Name = "txtPlantMorphology";
-            this.txtPlantMorphology.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.txtPlantMorphology.Size = new System.Drawing.Size(702, 154);
-            this.txtPlantMorphology.TabIndex = 4;
-            this.txtPlantMorphology.WordWrap = false;
-            // 
-            // lblScientificName
-            // 
-            this.lblScientificName.AutoSize = true;
-            this.lblScientificName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblScientificName.Location = new System.Drawing.Point(24, 78);
-            this.lblScientificName.Name = "lblScientificName";
-            this.lblScientificName.Size = new System.Drawing.Size(129, 21);
-            this.lblScientificName.TabIndex = 16;
-            this.lblScientificName.Text = "Scientific Name *";
-            // 
-            // txtScientificName
-            // 
-            this.txtScientificName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtScientificName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtScientificName.Location = new System.Drawing.Point(28, 103);
-            this.txtScientificName.Name = "txtScientificName";
-            this.txtScientificName.Size = new System.Drawing.Size(701, 25);
-            this.txtScientificName.TabIndex = 2;
-            // 
-            // lblCommonName
-            // 
-            this.lblCommonName.AutoSize = true;
-            this.lblCommonName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCommonName.Location = new System.Drawing.Point(23, 15);
-            this.lblCommonName.Name = "lblCommonName";
-            this.lblCommonName.Size = new System.Drawing.Size(132, 21);
-            this.lblCommonName.TabIndex = 14;
-            this.lblCommonName.Text = "Common Name *";
-            // 
-            // txtCommonName
-            // 
-            this.txtCommonName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtCommonName.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCommonName.Location = new System.Drawing.Point(28, 39);
-            this.txtCommonName.Name = "txtCommonName";
-            this.txtCommonName.Size = new System.Drawing.Size(701, 25);
-            this.txtCommonName.TabIndex = 1;
+            this.lblHeader.AutoSize = true;
+            this.lblHeader.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeader.ForeColor = System.Drawing.Color.White;
+            this.lblHeader.Location = new System.Drawing.Point(17, 9);
+            this.lblHeader.Name = "lblHeader";
+            this.lblHeader.Size = new System.Drawing.Size(117, 32);
+            this.lblHeader.TabIndex = 13;
+            this.lblHeader.Text = "Add Plant";
             // 
             // pnlView
             // 
@@ -415,29 +493,49 @@
             this.pnlView.TabIndex = 36;
             this.pnlView.Visible = false;
             // 
-            // pnlWrapEconomicImportance
+            // panel6
             // 
-            this.pnlWrapEconomicImportance.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pnlWrapEconomicImportance.AutoScroll = true;
-            this.pnlWrapEconomicImportance.Controls.Add(this.lblEconomicImportanceView);
-            this.pnlWrapEconomicImportance.Location = new System.Drawing.Point(33, 283);
-            this.pnlWrapEconomicImportance.MaximumSize = new System.Drawing.Size(706, 188);
-            this.pnlWrapEconomicImportance.Name = "pnlWrapEconomicImportance";
-            this.pnlWrapEconomicImportance.Size = new System.Drawing.Size(706, 188);
-            this.pnlWrapEconomicImportance.TabIndex = 32;
+            this.panel6.BackColor = System.Drawing.Color.White;
+            this.panel6.Controls.Add(this.panel7);
+            this.panel6.Controls.Add(this.label5);
+            this.panel6.Controls.Add(this.label4);
+            this.panel6.Controls.Add(this.pnlWrapPlantMorphology);
+            this.panel6.Controls.Add(this.pnlWrapEconomicImportance);
+            this.panel6.Location = new System.Drawing.Point(12, 199);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(749, 509);
+            this.panel6.TabIndex = 36;
             // 
-            // lblEconomicImportanceView
+            // panel7
             // 
-            this.lblEconomicImportanceView.AutoSize = true;
-            this.lblEconomicImportanceView.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEconomicImportanceView.Location = new System.Drawing.Point(0, 0);
-            this.lblEconomicImportanceView.MaximumSize = new System.Drawing.Size(680, 0);
-            this.lblEconomicImportanceView.Name = "lblEconomicImportanceView";
-            this.lblEconomicImportanceView.Size = new System.Drawing.Size(120, 13);
-            this.lblEconomicImportanceView.TabIndex = 19;
-            this.lblEconomicImportanceView.Text = "Economic Importance:";
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(63)))), ((int)(((byte)(64)))));
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel7.Location = new System.Drawing.Point(0, 0);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(13, 509);
+            this.panel7.TabIndex = 33;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label5.Location = new System.Drawing.Point(29, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 21);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "Plant Morphology";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.label4.Location = new System.Drawing.Point(29, 259);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(170, 21);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "Economic Importance";
             // 
             // pnlWrapPlantMorphology
             // 
@@ -463,65 +561,83 @@
             this.lblPlantMorphologyView.TabIndex = 18;
             this.lblPlantMorphologyView.Text = "Plant Morphology:";
             // 
-            // label5
+            // pnlWrapEconomicImportance
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label5.Location = new System.Drawing.Point(29, 21);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(142, 21);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Plant Morphology";
+            this.pnlWrapEconomicImportance.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlWrapEconomicImportance.AutoScroll = true;
+            this.pnlWrapEconomicImportance.Controls.Add(this.lblEconomicImportanceView);
+            this.pnlWrapEconomicImportance.Location = new System.Drawing.Point(33, 283);
+            this.pnlWrapEconomicImportance.MaximumSize = new System.Drawing.Size(706, 188);
+            this.pnlWrapEconomicImportance.Name = "pnlWrapEconomicImportance";
+            this.pnlWrapEconomicImportance.Size = new System.Drawing.Size(706, 188);
+            this.pnlWrapEconomicImportance.TabIndex = 32;
             // 
-            // label4
+            // lblEconomicImportanceView
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
-            this.label4.Location = new System.Drawing.Point(29, 259);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 21);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "Economic Importance";
+            this.lblEconomicImportanceView.AutoSize = true;
+            this.lblEconomicImportanceView.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEconomicImportanceView.Location = new System.Drawing.Point(0, 0);
+            this.lblEconomicImportanceView.MaximumSize = new System.Drawing.Size(680, 0);
+            this.lblEconomicImportanceView.Name = "lblEconomicImportanceView";
+            this.lblEconomicImportanceView.Size = new System.Drawing.Size(120, 13);
+            this.lblEconomicImportanceView.TabIndex = 19;
+            this.lblEconomicImportanceView.Text = "Economic Importance:";
             // 
-            // label3
+            // panel4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(298, 587);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 20);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Image of the leaves";
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.panel12);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Controls.Add(this.pbWholePlantView);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Controls.Add(this.pbFlowersView);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Controls.Add(this.pbLeavesView);
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Location = new System.Drawing.Point(784, 20);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(484, 629);
+            this.panel4.TabIndex = 35;
             // 
-            // pbLeavesView
+            // panel12
             // 
-            this.pbLeavesView.Location = new System.Drawing.Point(268, 412);
-            this.pbLeavesView.Name = "pbLeavesView";
-            this.pbLeavesView.Size = new System.Drawing.Size(196, 172);
-            this.pbLeavesView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbLeavesView.TabIndex = 23;
-            this.pbLeavesView.TabStop = false;
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
+            this.panel12.Location = new System.Drawing.Point(24, 48);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(444, 3);
+            this.panel12.TabIndex = 27;
             // 
-            // label2
+            // label9
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(60, 587);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 20);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Image of the flower";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(54)))), ((int)(((byte)(58)))));
+            this.label9.Location = new System.Drawing.Point(197, 13);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 30);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Gallery";
             // 
-            // pbFlowersView
+            // panel5
             // 
-            this.pbFlowersView.Location = new System.Drawing.Point(34, 412);
-            this.pbFlowersView.Name = "pbFlowersView";
-            this.pbFlowersView.Size = new System.Drawing.Size(196, 172);
-            this.pbFlowersView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFlowersView.TabIndex = 21;
-            this.pbFlowersView.TabStop = false;
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(164)))), ((int)(((byte)(87)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(13, 629);
+            this.panel5.TabIndex = 25;
+            // 
+            // pbWholePlantView
+            // 
+            this.pbWholePlantView.Location = new System.Drawing.Point(52, 61);
+            this.pbWholePlantView.Name = "pbWholePlantView";
+            this.pbWholePlantView.Size = new System.Drawing.Size(394, 302);
+            this.pbWholePlantView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbWholePlantView.TabIndex = 0;
+            this.pbWholePlantView.TabStop = false;
             // 
             // label1
             // 
@@ -533,16 +649,114 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Image of the whole plant";
             // 
-            // lblFamilyView
+            // pbFlowersView
             // 
-            this.lblFamilyView.AutoSize = true;
-            this.lblFamilyView.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFamilyView.ForeColor = System.Drawing.Color.Black;
-            this.lblFamilyView.Location = new System.Drawing.Point(28, 121);
-            this.lblFamilyView.Name = "lblFamilyView";
-            this.lblFamilyView.Size = new System.Drawing.Size(68, 25);
-            this.lblFamilyView.TabIndex = 17;
-            this.lblFamilyView.Text = "FAMILY";
+            this.pbFlowersView.Location = new System.Drawing.Point(34, 412);
+            this.pbFlowersView.Name = "pbFlowersView";
+            this.pbFlowersView.Size = new System.Drawing.Size(196, 172);
+            this.pbFlowersView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFlowersView.TabIndex = 21;
+            this.pbFlowersView.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(60, 587);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 20);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Image of the flower";
+            // 
+            // pbLeavesView
+            // 
+            this.pbLeavesView.Location = new System.Drawing.Point(268, 412);
+            this.pbLeavesView.Name = "pbLeavesView";
+            this.pbLeavesView.Size = new System.Drawing.Size(196, 172);
+            this.pbLeavesView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbLeavesView.TabIndex = 23;
+            this.pbLeavesView.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(298, 587);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(148, 20);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Image of the leaves";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(119)))), ((int)(((byte)(189)))));
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1280, 13);
+            this.panel2.TabIndex = 34;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Controls.Add(this.lblCommonNameView);
+            this.panel1.Controls.Add(this.lblScientificNameView);
+            this.panel1.Controls.Add(this.lblFamilyView);
+            this.panel1.Location = new System.Drawing.Point(12, 20);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(749, 173);
+            this.panel1.TabIndex = 33;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(35, 146);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 13);
+            this.label8.TabIndex = 21;
+            this.label8.Text = "(Family)";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(35, 97);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(91, 13);
+            this.label7.TabIndex = 20;
+            this.label7.Text = "(Scientific Name)";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(35, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 13);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "(Common Name)";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(29)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(13, 173);
+            this.panel3.TabIndex = 18;
+            // 
+            // lblCommonNameView
+            // 
+            this.lblCommonNameView.AutoSize = true;
+            this.lblCommonNameView.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCommonNameView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
+            this.lblCommonNameView.Location = new System.Drawing.Point(26, 8);
+            this.lblCommonNameView.Name = "lblCommonNameView";
+            this.lblCommonNameView.Size = new System.Drawing.Size(230, 37);
+            this.lblCommonNameView.TabIndex = 15;
+            this.lblCommonNameView.Text = "COMMON NAME";
             // 
             // lblScientificNameView
             // 
@@ -555,16 +769,16 @@
             this.lblScientificNameView.TabIndex = 16;
             this.lblScientificNameView.Text = "SCIENTIFIC NAME";
             // 
-            // lblCommonNameView
+            // lblFamilyView
             // 
-            this.lblCommonNameView.AutoSize = true;
-            this.lblCommonNameView.Font = new System.Drawing.Font("Segoe UI Semibold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCommonNameView.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(104)))), ((int)(((byte)(104)))));
-            this.lblCommonNameView.Location = new System.Drawing.Point(26, 8);
-            this.lblCommonNameView.Name = "lblCommonNameView";
-            this.lblCommonNameView.Size = new System.Drawing.Size(230, 37);
-            this.lblCommonNameView.TabIndex = 15;
-            this.lblCommonNameView.Text = "COMMON NAME";
+            this.lblFamilyView.AutoSize = true;
+            this.lblFamilyView.Font = new System.Drawing.Font("Segoe UI Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFamilyView.ForeColor = System.Drawing.Color.Black;
+            this.lblFamilyView.Location = new System.Drawing.Point(28, 121);
+            this.lblFamilyView.Name = "lblFamilyView";
+            this.lblFamilyView.Size = new System.Drawing.Size(68, 25);
+            this.lblFamilyView.TabIndex = 17;
+            this.lblFamilyView.Text = "FAMILY";
             // 
             // pbEdit
             // 
@@ -611,228 +825,14 @@
             this.toolTip1.SetToolTip(this.pbClose, "Close");
             this.pbClose.Click += new System.EventHandler(this.pbClose_Click);
             // 
-            // pbWholePlantView
-            // 
-            this.pbWholePlantView.Location = new System.Drawing.Point(52, 61);
-            this.pbWholePlantView.Name = "pbWholePlantView";
-            this.pbWholePlantView.Size = new System.Drawing.Size(394, 302);
-            this.pbWholePlantView.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbWholePlantView.TabIndex = 0;
-            this.pbWholePlantView.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.lblCommonNameView);
-            this.panel1.Controls.Add(this.lblScientificNameView);
-            this.panel1.Controls.Add(this.lblFamilyView);
-            this.panel1.Location = new System.Drawing.Point(12, 20);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(749, 173);
-            this.panel1.TabIndex = 33;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(119)))), ((int)(((byte)(189)))));
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1280, 13);
-            this.panel2.TabIndex = 34;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(141)))), ((int)(((byte)(29)))));
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(13, 173);
-            this.panel3.TabIndex = 18;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.panel12);
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.pbWholePlantView);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.pbFlowersView);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.pbLeavesView);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(784, 20);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(484, 629);
-            this.panel4.TabIndex = 35;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(164)))), ((int)(((byte)(87)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(13, 629);
-            this.panel5.TabIndex = 25;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(35, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 13);
-            this.label6.TabIndex = 19;
-            this.label6.Text = "(Common Name)";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(35, 97);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 13);
-            this.label7.TabIndex = 20;
-            this.label7.Text = "(Scientific Name)";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(35, 146);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 13);
-            this.label8.TabIndex = 21;
-            this.label8.Text = "(Family)";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.White;
-            this.panel6.Controls.Add(this.panel7);
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Controls.Add(this.label4);
-            this.panel6.Controls.Add(this.pnlWrapPlantMorphology);
-            this.panel6.Controls.Add(this.pnlWrapEconomicImportance);
-            this.panel6.Location = new System.Drawing.Point(12, 199);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(749, 509);
-            this.panel6.TabIndex = 36;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(63)))), ((int)(((byte)(64)))));
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel7.Location = new System.Drawing.Point(0, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(13, 509);
-            this.panel7.TabIndex = 33;
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.txtCommonName);
-            this.panel8.Controls.Add(this.lblCommonName);
-            this.panel8.Controls.Add(this.txtScientificName);
-            this.panel8.Controls.Add(this.lblScientificName);
-            this.panel8.Controls.Add(this.txtFamily);
-            this.panel8.Controls.Add(this.lblFamily);
-            this.panel8.Controls.Add(this.lblPlantMorphology);
-            this.panel8.Controls.Add(this.txtPlantMorphology);
-            this.panel8.Controls.Add(this.txtEconomicImportance);
-            this.panel8.Controls.Add(this.lblEconomicImportance);
-            this.panel8.Location = new System.Drawing.Point(12, 65);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(749, 643);
-            this.panel8.TabIndex = 43;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(144)))), ((int)(((byte)(69)))));
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(13, 643);
-            this.panel9.TabIndex = 18;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.White;
-            this.panel10.Controls.Add(this.panel11);
-            this.panel10.Controls.Add(this.pbWholePlant);
-            this.panel10.Controls.Add(this.lblWholePlantImage);
-            this.panel10.Controls.Add(this.pbLeaves);
-            this.panel10.Controls.Add(this.pbFlower);
-            this.panel10.Controls.Add(this.pbAddImageWholePlant);
-            this.panel10.Controls.Add(this.pbAddLeavesImage);
-            this.panel10.Controls.Add(this.lblFlowerImage);
-            this.panel10.Controls.Add(this.lblLeavesImage);
-            this.panel10.Controls.Add(this.pbAddImageFlower);
-            this.panel10.Location = new System.Drawing.Point(782, 65);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(484, 583);
-            this.panel10.TabIndex = 44;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(41)))), ((int)(((byte)(106)))));
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(13, 583);
-            this.panel11.TabIndex = 25;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semilight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(54)))), ((int)(((byte)(58)))));
-            this.label9.Location = new System.Drawing.Point(197, 13);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 30);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Gallery";
-            // 
-            // pbAddImageFlower
-            // 
-            this.pbAddImageFlower.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pbAddImageFlower.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbAddImageFlower.Image = global::plants.PL.Properties.Resources._099_photo_camera;
-            this.pbAddImageFlower.Location = new System.Drawing.Point(26, 335);
-            this.pbAddImageFlower.Name = "pbAddImageFlower";
-            this.pbAddImageFlower.Size = new System.Drawing.Size(50, 51);
-            this.pbAddImageFlower.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAddImageFlower.TabIndex = 29;
-            this.pbAddImageFlower.TabStop = false;
-            this.pbAddImageFlower.Click += new System.EventHandler(this.pbAddImageFlower_Click);
-            // 
-            // lblFlowerImage
-            // 
-            this.lblFlowerImage.AutoSize = true;
-            this.lblFlowerImage.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblFlowerImage.Location = new System.Drawing.Point(82, 365);
-            this.lblFlowerImage.Name = "lblFlowerImage";
-            this.lblFlowerImage.Size = new System.Drawing.Size(145, 21);
-            this.lblFlowerImage.TabIndex = 28;
-            this.lblFlowerImage.Text = "Image of the flower";
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(238)))), ((int)(((byte)(243)))));
-            this.panel12.Location = new System.Drawing.Point(24, 48);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(444, 3);
-            this.panel12.TabIndex = 27;
-            // 
             // frmPlantCRUD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.pnlView);
             this.Controls.Add(this.pnlForm);
+            this.Controls.Add(this.pnlView);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -840,38 +840,38 @@
             this.Name = "frmPlantCRUD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnlForm.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbFlower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLeaves)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbWholePlant)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAddLeavesImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeaves)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbFlower)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbAddImageWholePlant)).EndInit();
-            this.pnlHeader.ResumeLayout(false);
-            this.pnlHeader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAddLeavesImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAddImageFlower)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSave)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCloseAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbBack)).EndInit();
+            this.pnlHeader.ResumeLayout(false);
+            this.pnlHeader.PerformLayout();
             this.pnlView.ResumeLayout(false);
-            this.pnlWrapEconomicImportance.ResumeLayout(false);
-            this.pnlWrapEconomicImportance.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.pnlWrapPlantMorphology.ResumeLayout(false);
             this.pnlWrapPlantMorphology.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLeavesView)).EndInit();
+            this.pnlWrapEconomicImportance.ResumeLayout(false);
+            this.pnlWrapEconomicImportance.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWholePlantView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbFlowersView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLeavesView)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEdit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbWholePlantView)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAddImageFlower)).EndInit();
             this.ResumeLayout(false);
 
         }
