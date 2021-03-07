@@ -10,17 +10,12 @@
         "projectUniqueName": "C:\\xampp\\htdocs\\plants\\plants.BL\\plants.BL.csproj",
         "projectName": "plants.BL",
         "projectPath": "C:\\xampp\\htdocs\\plants\\plants.BL\\plants.BL.csproj",
-        "packagesPath": "C:\\Users\\Dade Murphy\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\dade\\.nuget\\packages\\",
         "outputPath": "C:\\xampp\\htdocs\\plants\\plants.BL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dade Murphy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\dade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -31,6 +26,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {
               "C:\\xampp\\htdocs\\plants\\plants.DL\\plants.DL.csproj": {
                 "projectPath": "C:\\xampp\\htdocs\\plants\\plants.DL\\plants.DL.csproj"
@@ -49,6 +45,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
@@ -71,7 +68,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -81,17 +78,12 @@
         "projectUniqueName": "C:\\xampp\\htdocs\\plants\\plants.DL\\plants.DL.csproj",
         "projectName": "plants.DL",
         "projectPath": "C:\\xampp\\htdocs\\plants\\plants.DL\\plants.DL.csproj",
-        "packagesPath": "C:\\Users\\Dade Murphy\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\dade\\.nuget\\packages\\",
         "outputPath": "C:\\xampp\\htdocs\\plants\\plants.DL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dade Murphy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\dade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -102,6 +94,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {
               "C:\\xampp\\htdocs\\plants\\plants.EL\\plants.EL.csproj": {
                 "projectPath": "C:\\xampp\\htdocs\\plants\\plants.EL\\plants.EL.csproj"
@@ -117,6 +110,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
@@ -139,7 +133,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -149,17 +143,12 @@
         "projectUniqueName": "C:\\xampp\\htdocs\\plants\\plants.EL\\plants.EL.csproj",
         "projectName": "plants.EL",
         "projectPath": "C:\\xampp\\htdocs\\plants\\plants.EL\\plants.EL.csproj",
-        "packagesPath": "C:\\Users\\Dade Murphy\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\dade\\.nuget\\packages\\",
         "outputPath": "C:\\xampp\\htdocs\\plants\\plants.EL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Dade Murphy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\dade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -170,6 +159,7 @@
         },
         "frameworks": {
           "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -181,6 +171,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
             "MySql.Data": {
               "target": "Package",
@@ -203,7 +194,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

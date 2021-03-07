@@ -4219,9 +4219,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dade Murphy\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\dade\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -4229,17 +4227,12 @@
       "projectUniqueName": "C:\\xampp\\htdocs\\plants\\plants.EL\\plants.EL.csproj",
       "projectName": "plants.EL",
       "projectPath": "C:\\xampp\\htdocs\\plants\\plants.EL\\plants.EL.csproj",
-      "packagesPath": "C:\\Users\\Dade Murphy\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\dade\\.nuget\\packages\\",
       "outputPath": "C:\\xampp\\htdocs\\plants\\plants.EL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Dade Murphy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\dade\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -4250,6 +4243,7 @@
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {}
         }
       },
@@ -4261,6 +4255,7 @@
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "MySql.Data": {
             "target": "Package",
@@ -4283,7 +4278,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
